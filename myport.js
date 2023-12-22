@@ -11,10 +11,18 @@ if (body.classList.contains('light')) {
 if (prefersDarkScheme.matches) {
     document.body.classList.remove("light");
     document.body.classList.add("dark");
+
+    lndIcon.classList.remove("fa-sun");
+    lndIcon.classList.add("fa-moon");
+
     profilePic.src = 'images/profile_pic_2.jpg';
 } else {
     document.body.classList.remove("dark");
     document.body.classList.add("light");
+
+    lndIcon.classList.remove("fa-moon");
+    lndIcon.classList.add("fa-sun");
+
     profilePic.src = 'images/profile_pic_1.jpg';
 }
 
