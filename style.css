@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.light {
+    --text-color: black;
+    --bg-color: linear-gradient(to right, azure, honeydew, mintcream);
+    --font-weight: normal;
+}
+
+.dark {
+    --text-color: ghostwhite;
+    --bg-color: rgb(13, 12, 12);
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+h1, h2 {
+    font-family: 'Karla', sans-serif;
+}
+
+p {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#lightndark {
+    position: fixed;
+    top: 2%;
+    right: 2%;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.intro {
+    position: relative;
+}
+
+.profile_pic {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 11.5rem;
+    height: 11.5rem;
+    border-radius: 50%;
+}
+
+.language {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 16px;
+}
+
+.lang, .lang .fab {
+    transition: 0.5s ease-in-out;
+}
+
+.lang:hover {
+    cursor: pointer;
+}
+
+/* HTML */
+.lang.html:hover {
+    border-color: #F06529 !important;
+}
+
+.lang.html:hover .fa-html5 {
+    color: #F06529;
+}
+
+/* CSS */
+.lang.css:hover {
+    border-color: #264de4 !important;
+}
+
+.lang.css:hover .fa-css3-alt {
+    color: #264de4;
+}
+
+/* Javascript */
+.lang.javascript:hover {
+    border-color: yellow !important;
+}
+
+.lang.javascript:hover .fa-js {
+    color: yellow;
+}
+
+/* Bootstrap */
+.lang.bootstrap:hover {
+    border-color: purple !important;
+}
+
+.lang.bootstrap:hover .fa-bootstrap {
+    color: purple;
+}
+
+.futo {
+    position: relative;
+}
+
+.futo p{
+    width: 45%;
+}
+
+.futo img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 7.5rem;
+    height: 7.5rem;
+}
+
+.social_buttons {
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+.fas, .fab, .far, .fa-solid, .fa-regular, .fa-brands {
+    color: var(--text-color);
+}
+
+.social_buttons .fas, 
+.social_buttons .far, 
+.social_buttons .fab, 
+.social_buttons .fa-solid, 
+.social_buttons .fa-regular, 
+.social_buttons .fa-brands {
+    transition: 0.5s ease-in-out;
+}
+
+.social_buttons .fas:hover, 
+.social_buttons .far:hover, 
+.social_buttons .fab:hover, 
+.social_buttons .fa-solid:hover, 
+.social_buttons .fa-regular:hover, 
+.social_buttons .fa-brands:hover {
+    transform: scale(1.5);
+}
+
+.fa-facebook-f:hover {
+    color: #3b5998;
+}
+
+.fa-instagram:hover {
+    background: linear-gradient(50deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.fa-linkedin:hover {
+    color: #0077b5;
+}
+
+.disabled {
+    opacity: 0.5;
+}
+
+.linkedin {
+    --bs-tooltip-bg: #0077b5;
+}
+
+.fa-discord:hover {
+    color: #5865f2
+}
+
+.fa-envelope:hover {
+    color: #C71610;
+}
+
+footer p {
+    font-size: 1.2rem;
+    letter-spacing: 5px;
+    font-weight: 800;
+}
+
+/* Media Queries */
+/* Media query for small phones */
+@media only screen and (min-width : 320px) and (max-width: 480px) {
+    html {
+        font-size: 12px;
+    }
+
+    .profile_pic {
+        width: 6rem;
+        height: 6rem;
+        margin: 10% 2% 0 0!important;
+    }
+
+    .education p {
+        width: 60%;
+    }
+
+    .testimonial figure {
+        margin: 0 10%;
+    }
+
+    .social_buttons .fas, 
+    .social_buttons .far, 
+    .social_buttons .fab, 
+    .social_buttons .fa-solid, 
+    .social_buttons .fa-regular, 
+    .social_buttons .fa-brands {
+        font-size: 2rem;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+}
+
+/* Media Query for medium sized phones */
+@media only screen and (min-width : 481px) and (max-width : 768px) {
+    html {
+        font-size: 14px !important;
+    }
+}
+
+/* Media Query for Tablets */
+@media only screen and (min-width : 769px) and (max-width : 1023px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+/* Media query for desktop monitors and big laptops */
+@media only screen and (min-width : 1024px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+/* Media Query for Smart TVs */
+@media only screen and (min-width : 1080px) {
+    html {
+        font-size: 24px;
+    }
+}
