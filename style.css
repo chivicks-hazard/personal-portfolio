@@ -158,6 +158,14 @@ p {
     color: transparent;
 }
 
+.fa-telegram-plane:hover {
+    background: linear-gradient(to bottom, #2aabee, #229ed9);
+    display: inline-block; 
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
 .fa-linkedin:hover {
     color: #0077b5;
 }
@@ -189,6 +197,10 @@ footer p {
 @media only screen and (min-width : 240px) and (max-width: 480px) {
     html {
         font-size: 12px;
+    }
+
+    p {
+        font-size: 1.1em;
     }
 
     .profile_pic {
