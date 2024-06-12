@@ -21,8 +21,8 @@ const carouselItems = document.querySelectorAll('.carousel-item[data-bs-toggle="
 const modalName = document.querySelector('.modal-title');
 const modalText= document.querySelector('.modal-body p');
 const modalPicture = document.querySelector('.modal-body img');
-const modalGithub = document.querySelector('.modal-footer .fa-github');
-const modalLink = document.querySelector('.modal-footer .fa-arrow-up-right-from-square');
+const modalGithub = document.querySelector('.modal-footer .fa-github').parentElement;
+const modalLink = document.querySelector('.modal-footer .fa-arrow-up-right-from-square').parentElement;
 const modalStackContainer = document.querySelector('.modal-footer .lang');
 
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
