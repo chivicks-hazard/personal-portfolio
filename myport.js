@@ -3,7 +3,7 @@ const projects = [
         name: 'Flavourfiesta Bites',
         description: "This was inspired by a restaurant's page with the aim of building a landing page.",
         stack: ['html5', 'css3-alt', 'js'],
-        image: 'flavorfiesta.png',
+        image: 'flavorfiesta.PNG',
         link: 'https://flavorfiesta.vercel.app/',
         github: 'https://github.com/chivicks-hazard/landing-page'
     },
@@ -11,7 +11,7 @@ const projects = [
         name: 'My Music Player',
         description: "This is a Web-based music player that utilizes the power of vanilla JavaScript",
         stack: ['html5', 'css3-alt', 'js'],
-        image: 'musicplayer.png',
+        image: 'musicplayer.PNG',
         link: 'https://music-player-eta-topaz.vercel.app/',
         github: 'https://github.com/chivicks-hazard/music-player'
     }
