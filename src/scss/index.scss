@@ -1,1 +1,131 @@
+@import 'mods';
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+// $enable-grid-classes: false;
+// $enable-cssgrid: true;
+
+
+// Default values for the portfolio
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    background: rgb(13, 12, 12);
+    color: ghostwhite;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Josefin Sans Variable', sans-serif;
+}
+
+p {
+    font-family: 'Josefin Sans Variable', sans-serif;
+}
+
+.profile-pic {
+    --pic-size: 9rem;
+    width: var(--pic-size);
+    height: var(--pic-size);
+}
+
+.profile, 
+.my-text, 
+.lang, 
+.lang .icon, 
+.lang .tailwindcss-holder, 
+.lang .tailwindcss {
+    transition: 0.5s ease-in-out;
+}
+
+.icon {
+    font-size: 5rem;
+}
+
+.language {
+    --bs-columns: 3;
+    --bs-rows: 3;
+    --bs-gap: 0.8rem;
+}
+
+// For the skills section
+.lang {
+    &:hover{
+        cursor: pointer;
+    }
+
+    &.html:hover {
+        border-color: #F06529 !important;
+
+        .html.icon {
+            color: #F06529;
+        }
+    }
+
+    &.css:hover {
+        border-color: #264de4 !important;
+
+        .css.icon {
+            color: #264de4;
+        }
+    }
+
+    &.javascript:hover {
+        border-color: yellow !important;
+
+        .javascript.icon {
+            color: yellow;
+        }
+    }
+
+    &.bootstrap:hover {
+        border-color: purple !important;
+
+        .bootstrap.icon {
+            color: purple;
+        }
+    }
+
+    &.tailwindcss:hover {
+        border-color: #38bdf8 !important;
+
+        .tailwindcss.icon {
+            color: #38bdf8
+        }
+    }
+
+    &.react:hover {
+        border-color:  #58C4DC !important;
+
+        .react.icon {
+            color:  #58C4DC;
+        }
+    }
+}
+
+$mediascreenfz: 
+    481px 768px 14px,
+    769px 1024px 16px,
+    1025px 1200px 18px,
+    1201px 1400px 24px,
+    1401px 1600px 22px,
+    1601px 1800px 24px;
+
+@each $from, $to, $fz in $mediascreenfz {
+    @media screen and (min-width: $from) and (max-width: $to) {
+        html {
+            font-size: $fz;
+        }
+    }
+}

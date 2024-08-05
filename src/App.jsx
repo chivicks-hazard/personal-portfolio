@@ -1,8 +1,14 @@
-import React from 'react'
+import About from "./components/about"
+import Intro from "./components/intro"
+import Skills from "./components/skills"
 
 const App = () => {
   return (
-    <div className=''>App</div>
+    <main>
+      <Intro />
+      <About />
+      <Skills />
+    </main>
   )
 }
 
