@@ -1,5 +1,6 @@
 import About from "./components/about"
 import Intro from "./components/intro"
+import Projects from "./components/projects"
 import Skills from "./components/skills"
 
 const App = () => {
@@ -8,6 +9,7 @@ const App = () => {
       <Intro />
       <About />
       <Skills />
+      <Projects />
     </main>
   )
 }

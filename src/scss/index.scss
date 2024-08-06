@@ -12,26 +12,29 @@
     box-sizing: border-box;
 }
 
+:root {
+    --background: rgb(13, 12, 12);
+    --text-color: ghostwhite;
+    --html: #F06529;
+    --css: #2965F1;
+    --javascript: yellow;
+    --bootstrap: #6e2cf2;
+    --tailwindcss: #38BDF8;
+    --react: #61DBFB;
+}
+
 html {
     font-size: 20px;
 }
 
 body {
-    background: rgb(13, 12, 12);
-    color: ghostwhite;
+    background: var(--background);
+    color: var(--text-color);
 }
 
 a {
     text-decoration: none;
     color: inherit;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Josefin Sans Variable', sans-serif;
-}
-
-p {
-    font-family: 'Josefin Sans Variable', sans-serif;
 }
 
 .profile-pic {
@@ -66,50 +69,101 @@ p {
     }
 
     &.html:hover {
-        border-color: #F06529 !important;
+        border-color: var(--html) !important;
 
         .html.icon {
-            color: #F06529;
+            color: var(--html);
         }
     }
 
     &.css:hover {
-        border-color: #264de4 !important;
+        border-color: var(--css) !important;
 
         .css.icon {
-            color: #264de4;
+            color: var(--css);
         }
     }
 
     &.javascript:hover {
-        border-color: yellow !important;
+        border-color: var(--javascript) !important;
 
         .javascript.icon {
-            color: yellow;
+            color: var(--javascript);
         }
     }
 
     &.bootstrap:hover {
-        border-color: purple !important;
+        border-color: var(--bootstrap) !important;
 
         .bootstrap.icon {
-            color: purple;
+            color: var(--bootstrap);
         }
     }
 
     &.tailwindcss:hover {
-        border-color: #38bdf8 !important;
+        border-color: var(--tailwindcss) !important;
 
         .tailwindcss.icon {
-            color: #38bdf8
+            color: var(--tailwindcss)
         }
     }
 
     &.react:hover {
-        border-color:  #58C4DC !important;
+        border-color:  var(--react) !important;
 
         .react.icon {
-            color:  #58C4DC;
+            color:  var(--react);
+        }
+    }
+}
+
+.card {
+    --bs-card-bg: var(--background);
+    --bs-card-color: var(--text-color);
+    --bs-card-border-width: 0.1rem;
+    --bs-card-border-color: var(--text-color);
+
+    &-header {
+        color: var(--text-color);
+    }
+
+    .btn {
+        --bs-btn-font-size: 0.8rem;
+        --bs-btn-color: var(--text-color);
+        --bs-btn-bg: var(--background);
+        --bs-btn-border-color: var(--text-color);
+        --bs-btn-hover-bg: var(--text-color);
+        --bs-btn-hover-border-color: var(--text-color);
+        --bs-btn-active-color: var(--text-color);
+        --bs-btn-active-bg: rgba(58, 58, 58, 0.76);
+        --bs-btn-active-border-color: var(--text-color);
+    }
+
+    .icon {
+        font-size: 50px;
+
+        &.html {
+            color: var(--html);
+        }
+
+        &.css {
+            color: var(--css);
+        }
+
+        &.javascript {
+            color: var(--javascript);
+        }
+
+        &.bootstrap {
+            color: var(--bootstrap);
+        }
+
+        &.tailwindcss {
+            color: var(--tailwindcss)
+        }
+
+        &.react {
+            color:  var(--react);
         }
     }
 }

@@ -71,7 +71,7 @@
   --bs-dark-border-subtle: #adb5bd;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-sans-serif: "Josefin Sans Variable", sans-serif;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -11210,26 +11210,29 @@ textarea.form-control-lg {
   box-sizing: border-box;
 }
 
+:root {
+  --background: rgb(13, 12, 12);
+  --text-color: ghostwhite;
+  --html: #F06529;
+  --css: #2965F1;
+  --javascript: yellow;
+  --bootstrap: #6e2cf2;
+  --tailwindcss: #38BDF8;
+  --react: #61DBFB;
+}
+
 html {
   font-size: 20px;
 }
 
 body {
-  background: rgb(13, 12, 12);
-  color: ghostwhite;
+  background: var(--background);
+  color: var(--text-color);
 }
 
 a {
   text-decoration: none;
   color: inherit;
-}
-
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  font-family: "Josefin Sans Variable", sans-serif;
-}
-
-p {
-  font-family: "Josefin Sans Variable", sans-serif;
 }
 
 .profile-pic {
@@ -11261,40 +11264,82 @@ p {
   cursor: pointer;
 }
 .lang.html:hover {
-  border-color: #F06529 !important;
+  border-color: var(--html) !important;
 }
 .lang.html:hover .html.icon {
-  color: #F06529;
+  color: var(--html);
 }
 .lang.css:hover {
-  border-color: #264de4 !important;
+  border-color: var(--css) !important;
 }
 .lang.css:hover .css.icon {
-  color: #264de4;
+  color: var(--css);
 }
 .lang.javascript:hover {
-  border-color: yellow !important;
+  border-color: var(--javascript) !important;
 }
 .lang.javascript:hover .javascript.icon {
-  color: yellow;
+  color: var(--javascript);
 }
 .lang.bootstrap:hover {
-  border-color: purple !important;
+  border-color: var(--bootstrap) !important;
 }
 .lang.bootstrap:hover .bootstrap.icon {
-  color: purple;
+  color: var(--bootstrap);
 }
 .lang.tailwindcss:hover {
-  border-color: #38bdf8 !important;
+  border-color: var(--tailwindcss) !important;
 }
 .lang.tailwindcss:hover .tailwindcss.icon {
-  color: #38bdf8;
+  color: var(--tailwindcss);
 }
 .lang.react:hover {
-  border-color: #58C4DC !important;
+  border-color: var(--react) !important;
 }
 .lang.react:hover .react.icon {
-  color: #58C4DC;
+  color: var(--react);
+}
+
+.card {
+  --bs-card-bg: var(--background);
+  --bs-card-color: var(--text-color);
+  --bs-card-border-width: 0.1rem;
+  --bs-card-border-color: var(--text-color);
+}
+.card-header {
+  color: var(--text-color);
+}
+.card .btn {
+  --bs-btn-font-size: 0.8rem;
+  --bs-btn-color: var(--text-color);
+  --bs-btn-bg: var(--background);
+  --bs-btn-border-color: var(--text-color);
+  --bs-btn-hover-bg: var(--text-color);
+  --bs-btn-hover-border-color: var(--text-color);
+  --bs-btn-active-color: var(--text-color);
+  --bs-btn-active-bg: rgba(58, 58, 58, 0.76);
+  --bs-btn-active-border-color: var(--text-color);
+}
+.card .icon {
+  font-size: 50px;
+}
+.card .icon.html {
+  color: var(--html);
+}
+.card .icon.css {
+  color: var(--css);
+}
+.card .icon.javascript {
+  color: var(--javascript);
+}
+.card .icon.bootstrap {
+  color: var(--bootstrap);
+}
+.card .icon.tailwindcss {
+  color: var(--tailwindcss);
+}
+.card .icon.react {
+  color: var(--react);
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {

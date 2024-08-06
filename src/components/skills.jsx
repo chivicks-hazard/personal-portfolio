@@ -1,5 +1,5 @@
 import React from "react"
-import { FaBootstrap, FaCss3, FaHtml5, FaJs, FaReact } from "react-icons/fa6"
+import { FaBootstrap, FaCss3Alt, FaHtml5, FaJs, FaReact } from "react-icons/fa6"
 import { RiTailwindCssFill } from "react-icons/ri"
 
 const Skills = () => {
@@ -11,7 +11,7 @@ const Skills = () => {
         },
         {
             skill: "CSS",
-            icon: <FaCss3 />,
+            icon: <FaCss3Alt />,
             class: 'css'
         },
         {
@@ -37,7 +37,7 @@ const Skills = () => {
     ]
 
     return (
-        <section id="skillset" class="mt-5 p-3 mx-sm-5">
+        <section id="skillset" class="mt-5 px-3 pt-3 mx-sm-5">
             <h2 class="text-center mb-5 mt-5">My Skillset</h2>
             <div class="language mt-1 grid">
                 {
