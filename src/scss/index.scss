@@ -21,6 +21,7 @@
     --bootstrap: #6e2cf2;
     --tailwindcss: #38BDF8;
     --react: #61DBFB;
+    --java: #c05d16;
 }
 
 html {
@@ -140,7 +141,7 @@ a {
     }
 
     .icon {
-        font-size: 50px;
+        font-size: 2.5rem;
 
         &.html {
             color: var(--html);
@@ -165,10 +166,15 @@ a {
         &.react {
             color:  var(--react);
         }
+
+        &.java {
+            color:  var(--java);
+        }
     }
 }
 
 $mediascreenfz: 
+    320px 480px 12px,
     481px 768px 14px,
     769px 1024px 16px,
     1025px 1200px 18px,
