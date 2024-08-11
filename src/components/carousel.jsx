@@ -1,7 +1,7 @@
 import React from "react";
 import { FaArrowUpRightFromSquare, FaBootstrap, FaCss3Alt, FaGithub, FaHtml5, FaJava, FaJs, FaReact } from "react-icons/fa6";
 import { RiTailwindCssFill } from "react-icons/ri";
-import flavorfiesta from "../assets/images/flavorfiesta.png";
+import flavorfiesta from "../assets/images/flavorfiesta.jpg";
 import cliConverter from "../assets/images/cli-converter.gif";
 import opay from "../assets/images/my-opay-clone.gif";
 import Icon from "./icon";
