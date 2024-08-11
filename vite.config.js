@@ -5,4 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   assetsInclude: ["**/*.mkv", "**/*.gif"],
+  server: {
+    port: 3456,
+  }
 })

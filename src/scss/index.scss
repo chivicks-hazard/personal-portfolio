@@ -1,10 +1,6 @@
 @import 'mods';
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
-// $enable-grid-classes: false;
-// $enable-cssgrid: true;
-
-
 // Default values for the portfolio
 * {
     margin: 0;
@@ -15,6 +11,8 @@
 :root {
     --background: rgb(13, 12, 12);
     --text-color: ghostwhite;
+
+    // Language colors
     --html: #F06529;
     --css: #2965F1;
     --javascript: yellow;
@@ -118,6 +116,8 @@ a {
     }
 }
 
+
+// Carousel card
 .card {
     --bs-card-bg: var(--background);
     --bs-card-color: var(--text-color);
@@ -173,8 +173,54 @@ a {
     }
 }
 
-$mediascreenfz: 
-    320px 480px 12px,
+.futo p {
+    width: 45%;
+}
+
+.futo img {
+    top: 0;
+    right: 0;
+    --pic-size: 7.5rem;
+    width: var(--pic-size);
+    height: var(--pic-size);
+}
+
+.social-buttons {
+    font-size: 3rem;
+
+    a {
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+            transform: scale(1.5);
+        }
+    }
+}
+
+footer p {
+    letter-spacing: 0.2rem;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    html {
+        font-size: 12px;
+    }
+
+    figure {
+        margin: 0% 10%;
+    }
+
+    .social-buttons {
+        font-size: 2rem;
+    }
+
+    footer p {
+        font-size: 1rem !important;
+    }
+    
+}
+
+$mediascreenfz:
     481px 768px 14px,
     769px 1024px 16px,
     1025px 1200px 18px,

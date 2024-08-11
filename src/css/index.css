@@ -11346,9 +11346,44 @@ a {
   color: var(--java);
 }
 
+.futo p {
+  width: 45%;
+}
+
+.futo img {
+  top: 0;
+  right: 0;
+  --pic-size: 7.5rem;
+  width: var(--pic-size);
+  height: var(--pic-size);
+}
+
+.social-buttons {
+  font-size: 3rem;
+}
+.social-buttons a {
+  transition: 0.2s ease-in-out;
+}
+.social-buttons a:hover {
+  transform: scale(1.5);
+}
+
+footer p {
+  letter-spacing: 0.2rem;
+}
+
 @media screen and (min-width: 320px) and (max-width: 480px) {
   html {
     font-size: 12px;
+  }
+  figure {
+    margin: 0% 10%;
+  }
+  .social-buttons {
+    font-size: 2rem;
+  }
+  footer p {
+    font-size: 1rem !important;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
