@@ -1,6 +1,3 @@
-import React from "react"
-import { FaBootstrap, FaCss3Alt, FaHtml5, FaJs, FaReact } from "react-icons/fa6"
-import { RiTailwindCssFill } from "react-icons/ri"
 import Icon from "./icon"
 
 const Skills = () => {

@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaBootstrap, FaBriefcase, FaCss3Alt, FaFacebookF, FaGithub, FaHtml5, FaJs, FaLinkedin, FaReact, FaRegEnvelope, FaXTwitter } from 'react-icons/fa6';
+import { FaBootstrap, FaBriefcase, FaCss3Alt, FaFacebookF, FaGithub, FaHtml5, FaInstagram, FaJava, FaJs, FaLinkedin, FaReact, FaRegEnvelope, FaXTwitter } from 'react-icons/fa6';
 import { RiTailwindCssFill } from 'react-icons/ri';
 
 const Icon = ({icon}) => {
@@ -21,6 +21,9 @@ const Icon = ({icon}) => {
 
         case 'react':	
             return <FaReact />
+        
+        case 'java':
+            return <FaJava />
 
         case 'github':
             return <FaGithub />
@@ -33,6 +36,9 @@ const Icon = ({icon}) => {
 
         case 'facebook':
             return <FaFacebookF />
+
+        case 'instagram':
+            return <FaInstagram />
 
         case 'email':
             return <FaRegEnvelope />
