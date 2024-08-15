@@ -1,5 +1,5 @@
 import { FaGithub } from "react-icons/fa6"
-import { Tooltip } from "../../node_modules/bootstrap/dist/js/bootstrap.esm";
+import { Tooltip } from "bootstrap/dist/js/bootstrap.esm";
 import { useEffect } from "react";
 import Icon from "./icon";
 
