@@ -1,0 +1,237 @@
+@import 'mods';
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+// Default values for the portfolio
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: rgb(13, 12, 12);
+    --text-color: ghostwhite;
+
+    // Language colors
+    --html: #F06529;
+    --css: #2965F1;
+    --javascript: yellow;
+    --bootstrap: #6e2cf2;
+    --tailwindcss: #38BDF8;
+    --react: #61DBFB;
+    --java: #c05d16;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    background: var(--background);
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.profile-pic {
+    --pic-size: 9rem;
+    width: var(--pic-size);
+    height: var(--pic-size);
+}
+
+.profile, 
+.my-text, 
+.lang, 
+.lang .icon, 
+.lang .tailwindcss-holder, 
+.lang .tailwindcss {
+    transition: 0.5s ease-in-out;
+}
+
+.icon {
+    font-size: 5rem;
+}
+
+.language {
+    --bs-columns: 3;
+    --bs-rows: 3;
+    --bs-gap: 0.8rem;
+}
+
+// For the skills section
+.lang {
+    &:hover{
+        cursor: pointer;
+    }
+
+    &.html:hover {
+        border-color: var(--html) !important;
+
+        .html.icon {
+            color: var(--html);
+        }
+    }
+
+    &.css:hover {
+        border-color: var(--css) !important;
+
+        .css.icon {
+            color: var(--css);
+        }
+    }
+
+    &.javascript:hover {
+        border-color: var(--javascript) !important;
+
+        .javascript.icon {
+            color: var(--javascript);
+        }
+    }
+
+    &.bootstrap:hover {
+        border-color: var(--bootstrap) !important;
+
+        .bootstrap.icon {
+            color: var(--bootstrap);
+        }
+    }
+
+    &.tailwindcss:hover {
+        border-color: var(--tailwindcss) !important;
+
+        .tailwindcss.icon {
+            color: var(--tailwindcss)
+        }
+    }
+
+    &.react:hover {
+        border-color:  var(--react) !important;
+
+        .react.icon {
+            color:  var(--react);
+        }
+    }
+}
+
+
+// Carousel card
+.card {
+    --bs-card-bg: var(--background);
+    --bs-card-color: var(--text-color);
+    --bs-card-border-width: 0.1rem;
+    --bs-card-border-color: var(--text-color);
+
+    &-header {
+        color: var(--text-color);
+    }
+
+    .btn {
+        --bs-btn-font-size: 0.8rem;
+        --bs-btn-color: var(--text-color);
+        --bs-btn-bg: var(--background);
+        --bs-btn-border-color: var(--text-color);
+        --bs-btn-hover-bg: var(--text-color);
+        --bs-btn-hover-border-color: var(--text-color);
+        --bs-btn-active-color: var(--text-color);
+        --bs-btn-active-bg: rgba(58, 58, 58, 0.76);
+        --bs-btn-active-border-color: var(--text-color);
+    }
+
+    .icon {
+        font-size: 2.5rem;
+
+        &.html {
+            color: var(--html);
+        }
+
+        &.css {
+            color: var(--css);
+        }
+
+        &.javascript {
+            color: var(--javascript);
+        }
+
+        &.bootstrap {
+            color: var(--bootstrap);
+        }
+
+        &.tailwindcss {
+            color: var(--tailwindcss)
+        }
+
+        &.react {
+            color:  var(--react);
+        }
+
+        &.java {
+            color:  var(--java);
+        }
+    }
+}
+
+.futo p {
+    width: 45%;
+}
+
+.futo img {
+    top: 0;
+    right: 0;
+    --pic-size: 7.5rem;
+    width: var(--pic-size);
+    height: var(--pic-size);
+}
+
+.social-buttons {
+    font-size: 3rem;
+
+    a {
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+            transform: scale(1.5);
+        }
+    }
+}
+
+footer p {
+    letter-spacing: 0.2rem;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    html {
+        font-size: 12px;
+    }
+
+    figure {
+        margin: 0% 10%;
+    }
+
+    .social-buttons {
+        font-size: 2rem;
+    }
+
+    footer p {
+        font-size: 1rem !important;
+    }
+    
+}
+
+$mediascreenfz:
+    481px 768px 14px,
+    769px 1024px 16px,
+    1025px 1200px 18px,
+    1201px 1400px 24px,
+    1401px 1600px 22px,
+    1601px 1800px 24px;
+
+@each $from, $to, $fz in $mediascreenfz {
+    @media screen and (min-width: $from) and (max-width: $to) {
+        html {
+            font-size: $fz;
+        }
+    }
+}
