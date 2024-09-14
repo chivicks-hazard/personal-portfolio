@@ -1,6 +1,8 @@
 import React from 'react'
+import { BiLogoTypescript } from 'react-icons/bi';
 import { FaBootstrap, FaBriefcase, FaCss3Alt, FaFacebookF, FaGithub, FaHtml5, FaInstagram, FaJava, FaJs, FaLinkedin, FaReact, FaRegEnvelope, FaXTwitter } from 'react-icons/fa6';
 import { RiTailwindCssFill } from 'react-icons/ri';
+import { SiChartdotjs } from 'react-icons/si';
 
 const Icon = ({icon}) => {
     switch (icon) {
@@ -25,6 +27,9 @@ const Icon = ({icon}) => {
         case 'java':
             return <FaJava />
 
+        case "typescript":
+            return <BiLogoTypescript />
+
         case 'github':
             return <FaGithub />
 
@@ -45,6 +50,9 @@ const Icon = ({icon}) => {
 
         case 'briefcase':
             return <FaBriefcase />
+        
+        case "chartjs":
+            return <SiChartdotjs />
     
         default:
             break;

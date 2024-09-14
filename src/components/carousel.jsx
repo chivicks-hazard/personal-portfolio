@@ -2,6 +2,7 @@ import { FaArrowUpRightFromSquare, FaGithub} from "react-icons/fa6";
 import flavorfiesta from "../assets/images/flavorfiesta.jpg";
 import cliConverter from "../assets/images/cli-converter.gif";
 import opay from "../assets/images/my-opay-clone.gif";
+import dashboard from "../assets/images/dashboard.png"
 import Icon from "./icon";
 
 const Carousel = () => {
@@ -11,7 +12,6 @@ const Carousel = () => {
             description: "This was inspired by a restaurant's page with the aim of building a landing page.",
             stack: ["html", "css", "javascript", "bootstrap"],
             image: flavorfiesta,
-            interval: 5000,
             link: "https://flavorfiesta.vercel.app/",
             github: "https://github.com/chivicks-hazard/landing-page"
         },
@@ -31,6 +31,14 @@ const Carousel = () => {
             stack: ["react", "tailwindcss"],
             link: "https://my-opay-clone.vercel.app/",
             github: "https://github.com/chivicks-hazard/opay-clone"
+        },
+        {
+            name: "Finance Dashboard",
+            description: "This was a project I used to increase my skills in TypeScript and get into data visualisation as a frontend developer.",
+            image: dashboard,
+            stack: ["react", "tailwindcss", "typescript", "chartjs"],
+            link: "https://my-finance-dashboard.vercel.app/",
+            github: "https://github.com/chivicks-hazard/finance-dashboard"
         }
     ];
 
@@ -38,7 +46,7 @@ const Carousel = () => {
         <div className="carousel slide mt-5" id="projectCarousel" data-bs-ride="carousel">
             <div className="carousel-inner">
                 {projects.map((project, index) => (
-                    <div className={`carousel-item ${index === 0 ? 'active' : ''}`} data-bs-interval={project.interval ? (project.interval) : null} key={index}>
+                    <div className={`carousel-item ${index === 0 ? 'active' : ''}`} data-bs-interval={project.interval ? (project.interval) : 5000} key={index}>
                         <div className="d-flex justify-content-center">
                             <div className="card w-50">
                                 <h5 className="card-header">{project.name}</h5>

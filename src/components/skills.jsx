@@ -11,7 +11,7 @@ const Skills = () => {
             class: 'css'
         },
         {
-            skill: "Javascript",
+            skill: "JavaScript",
             class: 'javascript'
         },
         {
@@ -25,12 +25,21 @@ const Skills = () => {
         {
             skill: "React",
             class: 'react'
+        },
+        {
+            skill: "TypeScript",
+            class: 'typescript'
+        },
+        {
+            skill: "Chart JS",
+            class:  'chartjs'
+
         }
     ]
 
     return (
         <section id="skillset">
-            <div className="mt-5 px-3 pt-3 mx-sm-3">
+            <div className="mt-5 mb-5 px-3 pt-3 mx-sm-3">
                 <h2 class="text-center mb-5 mt-5">My Skillset</h2>
                 <div class="language mt-1 grid">
                     {

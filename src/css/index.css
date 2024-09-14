@@ -11220,6 +11220,8 @@ textarea.form-control-lg {
   --tailwindcss: #38BDF8;
   --react: #61DBFB;
   --java: #c05d16;
+  --typescript: #3178c6;
+  --chartjs: #fe777b;
 }
 
 html {
@@ -11300,6 +11302,18 @@ a {
 .lang.react:hover .react.icon {
   color: var(--react);
 }
+.lang.typescript:hover {
+  border-color: var(--typescript) !important;
+}
+.lang.typescript:hover .typescript.icon {
+  color: var(--typescript);
+}
+.lang.chartjs:hover {
+  border-color: var(--chartjs) !important;
+}
+.lang.chartjs:hover .chartjs.icon {
+  color: var(--chartjs);
+}
 
 .card {
   --bs-card-bg: var(--background);
@@ -11344,6 +11358,12 @@ a {
 }
 .card .icon.java {
   color: var(--java);
+}
+.card .icon.typescript {
+  color: var(--typescript);
+}
+.card .icon.chartjs {
+  color: var(--chartjs);
 }
 
 .futo p {

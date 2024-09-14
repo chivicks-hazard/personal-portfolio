@@ -20,6 +20,8 @@
     --tailwindcss: #38BDF8;
     --react: #61DBFB;
     --java: #c05d16;
+    --typescript: #3178c6;
+    --chartjs: #fe777b;
 }
 
 html {
@@ -114,6 +116,22 @@ a {
             color:  var(--react);
         }
     }
+
+    &.typescript:hover {
+        border-color: var(--typescript) !important;
+
+        .typescript.icon {
+            color: var(--typescript);
+        }
+    }
+
+    &.chartjs:hover {
+        border-color: var(--chartjs) !important;
+
+        .chartjs.icon {
+            color: var(--chartjs);
+        }
+    }
 }
 
 
@@ -169,6 +187,14 @@ a {
 
         &.java {
             color:  var(--java);
+        }
+
+        &.typescript {
+            color: var(--typescript);
+        }
+
+        &.chartjs {
+            color: var(--chartjs);
         }
     }
 }
