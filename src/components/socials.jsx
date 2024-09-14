@@ -21,16 +21,6 @@ const Socials = () => {
             icon: "github"
         },
         {
-            title: "@chivickshzard",
-            link: "https://www.facebook.com/chivickshzard",
-            icon: "facebook"
-        },
-        {
-            title: "@chivicks_hazard",
-            link: "https://instagram.com/chivicks_hazard",
-            icon: "instagram"
-        },
-        {
             title: "victorchigbodev@gmail.com",
             link: "mailto:victorchigbodev@gmail.com",
             icon: "briefcase"
