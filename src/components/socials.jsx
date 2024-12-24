@@ -23,11 +23,6 @@ const Socials = () => {
         {
             title: "victorchigbodev@gmail.com",
             link: "mailto:victorchigbodev@gmail.com",
-            icon: "briefcase"
-        },
-        {
-            title: "chigbovcm2020@gmail.com",
-            link: "mailto:chigbovcm2020@gmail.com",
             icon: "email"
         }
     ];

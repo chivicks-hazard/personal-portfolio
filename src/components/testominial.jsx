@@ -10,7 +10,7 @@ const Testimonial = () => {
                 <figure className="my-5 text-center">
                     <blockquote className="blockquote">
                         <p>
-                            Currently, I have no attributions to my works or anything I have made so far. <br />
+                            Currently, I have no comments on the things I have done or built so far. <br />
                             Regardless, I keep pushing.
                         </p>
                         <p className="blockquote-footer">Victor Chigbo</p>
