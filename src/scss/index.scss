@@ -1,5 +1,5 @@
-@import 'mods';
-@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import "mods";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 // Default values for the portfolio
 * {
@@ -10,15 +10,15 @@
 
 :root {
     --background: rgb(13, 12, 12);
-    --text-color: ghostwhite;
+    --text-color: lightgray;
 
     // Language colors
-    --html: #F06529;
-    --css: #2965F1;
+    --html: #f06529;
+    --css: #2965f1;
     --javascript: yellow;
     --bootstrap: #6e2cf2;
-    --tailwindcss: #38BDF8;
-    --react: #61DBFB;
+    --tailwindcss: #38bdf8;
+    --react: #61dbfb;
     --java: #c05d16;
     --typescript: #3178c6;
     --chartjs: #fe777b;
@@ -44,11 +44,11 @@ a {
     height: var(--pic-size);
 }
 
-.profile, 
-.my-text, 
-.lang, 
-.lang .icon, 
-.lang .tailwindcss-holder, 
+.profile,
+.my-text,
+.lang,
+.lang .icon,
+.lang .tailwindcss-holder,
 .lang .tailwindcss {
     transition: 0.5s ease-in-out;
 }
@@ -65,7 +65,7 @@ a {
 
 // For the skills section
 .lang {
-    &:hover{
+    &:hover {
         cursor: pointer;
     }
 
@@ -105,15 +105,15 @@ a {
         border-color: var(--tailwindcss) !important;
 
         .tailwindcss.icon {
-            color: var(--tailwindcss)
+            color: var(--tailwindcss);
         }
     }
 
     &.react:hover {
-        border-color:  var(--react) !important;
+        border-color: var(--react) !important;
 
         .react.icon {
-            color:  var(--react);
+            color: var(--react);
         }
     }
 
@@ -133,7 +133,6 @@ a {
         }
     }
 }
-
 
 // Carousel card
 .card {
@@ -178,15 +177,15 @@ a {
         }
 
         &.tailwindcss {
-            color: var(--tailwindcss)
+            color: var(--tailwindcss);
         }
 
         &.react {
-            color:  var(--react);
+            color: var(--react);
         }
 
         &.java {
-            color:  var(--java);
+            color: var(--java);
         }
 
         &.typescript {
@@ -243,7 +242,6 @@ footer p {
     footer p {
         font-size: 1rem !important;
     }
-    
 }
 
 $mediascreenfz:
