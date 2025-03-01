@@ -7,7 +7,6 @@ import { IoHome } from "react-icons/io5";
 import { FaCode, FaUser } from "react-icons/fa6";
 import { MdSchool } from "react-icons/md";
 import { FaQuoteLeft } from "react-icons/fa";
-import avatar from "/images/chivicksavatar.png";
 
 const MainLayout = () => {
     return (

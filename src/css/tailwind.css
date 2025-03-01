@@ -1,3 +1,5 @@
+@import "@fontsource-variable/josefin-sans";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,6 +7,12 @@
 /* html {
   font-size: 20px;
 } */
+
+body {
+  font-family: "Josefin Sans Variable", sans-serif !important;
+  background: rgb(13, 12, 12);
+  color: lightgray !important;
+}
 
 .warning {
     background: repeating-linear-gradient(

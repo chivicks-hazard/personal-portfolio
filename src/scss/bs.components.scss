@@ -1,0 +1,8 @@
+@import "mods";
+@import "../../node_modules/bootstrap/scss/tooltip";
+
+.tooltip {
+    --bs-tooltip-bg: #000;
+    --bs-tooltip-color: lightgray;
+    --bs-tooltip-font-size: 1.25rem;
+}

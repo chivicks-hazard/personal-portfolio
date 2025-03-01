@@ -226,9 +226,9 @@ footer p {
     letter-spacing: 0.2rem;
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 359px) {
     html {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     figure {
@@ -245,12 +245,14 @@ footer p {
 }
 
 $mediascreenfz:
-    481px 768px 14px,
-    769px 1024px 16px,
-    1025px 1200px 18px,
+    360px 480px 20px
+    481px 1024px 24px,
+    1025px 1200px 22px,
     1201px 1400px 24px,
-    1401px 1600px 22px,
-    1601px 1800px 24px;
+    1401px 1600px 28px,
+    1601px 1920px 32px,
+    1921px 2560px 36px,
+    2560px 3840px 40px;
 
 @each $from, $to, $fz in $mediascreenfz {
     @media screen and (min-width: $from) and (max-width: $to) {
