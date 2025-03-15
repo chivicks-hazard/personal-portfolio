@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@view-transition {
+    navigation: auto;
+  }
+
 :root {
     --html: #f06529;
     --css: #2965f1;
