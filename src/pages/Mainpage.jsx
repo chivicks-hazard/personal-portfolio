@@ -75,7 +75,7 @@ const MainPage = () => {
                     <h1 className="text-2xl md:text-6xl text-aliceblue">Portfolio Under Reconstruction</h1>
                 </div>
 
-                <div className="border-2 border-gray-400 p-4 md:p-5 rounded-lg w-3/4 mt-5 4xs:max-xs:mt-10">
+                <div className="border-2 border-gray-400 p-4 md:p-5 rounded-lg w-3/4 mt-5 max-xs:mt-10">
                     <div className="flex flex-row space-x-5 md:space-x-20 items-center">
                         <img
                             src={profilePic}
@@ -143,7 +143,7 @@ const MainPage = () => {
                         <img
                             src={profilePic}
                             alt="Victor Chigbo"
-                            className="mx-auto col-span-1 row-span-1 md:w-1/3 brightness-75 4xs:max-xs:contrast-[0.9]"
+                            className="mx-auto col-span-1 row-span-1 md:w-1/3 brightness-75 max-xs:contrast-[0.9]"
                         />
                         <div className="col-span-1 row-span-1">
                             <p className="text-2xl">
