@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import MainLayout from "./layouts/MainLayout";
-import MainPage from "./pages/MainPage";
+import MainPage from "./pages/Mainpage";
 import PortfolioPage from "./pages/PortfolioPage";
 
 const pageVariants = {
