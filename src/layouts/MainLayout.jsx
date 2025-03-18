@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import Footer from "../components/footer";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
@@ -7,7 +7,6 @@ import { IoHome } from "react-icons/io5";
 import { FaCode, FaUser } from "react-icons/fa6";
 import { MdSchool } from "react-icons/md";
 import { FaQuoteLeft } from "react-icons/fa";
-import avatar from "/images/chivicksavatar.png";
 
 const MainLayout = () => {
     return (
@@ -20,37 +19,37 @@ const MainLayout = () => {
                         className="w-16 rounded-full flex-start"
                     />
 
-                    <div className="flex-end flex flex-row space-x-5 4xs:max-xs:flex-column">
-                        <a
-                            href=""
-                            className="hover:scale-150 ease-in duration-500"
+                    <div className="flex-end flex flex-row space-x-5 max-xs:flex-column">
+                        <NavLink
+                            to="/"
+                            className="md:hover:scale-150 ease-in duration-500"
                         >
                             <IoHome className="text-white text-lg" />
-                        </a>
-                        <a
-                            href=""
-                            className="hover:scale-150 ease-in duration-500"
+                        </NavLink>
+                        <NavLink
+                            to=""
+                            className="md:hover:scale-150 ease-in duration-500"
                         >
                             <FaUser className="text-white text-lg" />
-                        </a>
-                        <a
-                            href=""
-                            className="hover:scale-150 ease-in duration-500"
+                        </NavLink>
+                        <NavLink
+                            to="/portfolio"
+                            className="md:hover:scale-150 ease-in duration-500"
                         >
                             <FaCode className="text-white text-lg" />
-                        </a>
-                        <a
-                            href=""
-                            className="hover:scale-150 ease-in duration-500"
+                        </NavLink>
+                        <NavLink
+                            to=""
+                            className="md:hover:scale-150 ease-in duration-500"
                         >
                             <MdSchool className="text-white text-lg" />
-                        </a>
-                        <a
-                            href=""
-                            className="hover:scale-150 ease-in duration-500"
+                        </NavLink>
+                        <NavLink
+                            to=""
+                            className="md:hover:scale-150 ease-in duration-500"
                         >
                             <FaQuoteLeft className="text-white text-lg" />
-                        </a>
+                        </NavLink>
                     </div>
                 </div>
             </nav>

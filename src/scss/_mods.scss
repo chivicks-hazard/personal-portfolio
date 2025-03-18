@@ -1,8 +1,7 @@
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
 
 // Enable CSS Grid in Bootstrap
 $enable-grid-classes: false;
 $enable-cssgrid: true;
-
-$font-family-sans-serif: "Josefin Sans Variable", sans-serif;

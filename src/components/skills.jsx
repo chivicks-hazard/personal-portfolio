@@ -2,52 +2,29 @@ import Icon from "./icon";
 
 const Skills = () => {
     const skills = [
-        {
-            skill: "HTML",
-            class: "html",
-        },
-        {
-            skill: "CSS",
-            class: "css",
-        },
-        {
-            skill: "JavaScript",
-            class: "javascript",
-        },
-        {
-            skill: "Bootstrap",
-            class: "bootstrap",
-        },
-        {
-            skill: "Tailwind CSS",
-            class: "tailwindcss",
-        },
-        {
-            skill: "React",
-            class: "react",
-        },
-        {
-            skill: "TypeScript",
-            class: "typescript",
-        },
-        {
-            skill: "Chart JS",
-            class: "chartjs",
-        },
+        { skill: "HTML", class: "html" },
+        { skill: "CSS", class: "css" },
+        { skill: "JavaScript", class: "javascript", },
+        { skill: "Bootstrap", class: "bootstrap" },
+        { skill: "Tailwind CSS", class: "tailwindcss" },
+        { skill: "React", class: "react" },
+        { skill: "TypeScript", class: "typescript" },
+        { skill: "Chart JS", class: "chartjs" },
     ];
 
     return (
         <section id="skillset">
-            <div className="mt-5 mb-5 px-3 pt-3 mx-sm-3">
-                <h2 class="text-center mb-5 mt-5">My Skillset</h2>
-                <div class="language mt-1 grid">
+            <div className="mt-5 pt-3 max-sm:mx-3"> 
+                <h2 class="text-center mb-5 mt-5 text-3xl text-ghostwhite">Skills</h2>
+                <div class="language mt-1 grid grid-rows-2 grid-cols-3 gap-2 md:mx-40">
                     {skills.map((skill, index) => {
                         return (
                             <div
-                                class={`lang border border-2 rounded py-3 px-3 ${skill.class} px-md-1`}
+                                key={index}
+                                className={`border-2 rounded py-3 px-3 row-span-1 col-span-1 flex flex-col items-center justify-center md:px-1`}
                             >
                                 <span
-                                    className={`${skill.class} g-col-${index} icon d-block text-center mt-3`}
+                                    className={`mt-3 text-5xl md:text-9xl ${skill.class}`}
                                 >
                                     <Icon icon={`${skill.class}`} />
                                 </span>

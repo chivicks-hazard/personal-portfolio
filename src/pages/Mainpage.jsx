@@ -1,10 +1,4 @@
-import About from "../components/about";
-import Education from "../components/education";
-import Intro from "../components/intro";
-import Projects from "../components/projects";
-import Skills from "../components/skills";
-import Socials from "../components/socials";
-import Testimonial from "../components/testominial";
+
 import profilePic from "../assets/images/profile_pic_1.jpg";
 import {
     FaBootstrap,
@@ -21,8 +15,9 @@ import { SiChakraui } from "react-icons/si";
 import { useEffect, useState } from "react";
 import { Tooltip } from "bootstrap";
 import Icon from "../components/icon";
+import { SiNextdotjs } from "react-icons/si";
 
-const Mainpage = () => {
+const MainPage = () => {
     const [clickCount, setClickCount] = useState(0);
     const [showBackdrop, setShowBackdrop] = useState();
 
@@ -70,29 +65,29 @@ const Mainpage = () => {
     };
 
     return (
-        <div>
+        <div className="">
             {/* Create a fullscreen backdrop blur cover with TailwindCSS */}
             <div
                 className={`fixed inset-0 bg-black bg-opacity-50 backdrop-blur-md z-10 flex justify-center items-center ${showBackdrop}`}
                 onClick={handleClick}
             >
                 <div className="w-full text-center warning absolute top-0 right-0">
-                    <h1 className="text-3xl">Portfolio Under Reconstruction</h1>
+                    <h1 className="text-2xl md:text-6xl text-aliceblue">Portfolio Under Reconstruction</h1>
                 </div>
 
-                <div className="border-2 border-gray-400 p-4 md:p-5 rounded-lg w-3/4 md:w-1/2 mt-5">
+                <div className="border-2 border-gray-400 p-4 md:p-5 rounded-lg w-3/4 mt-5 max-xs:mt-10">
                     <div className="flex flex-row space-x-5 md:space-x-20 items-center">
                         <img
                             src={profilePic}
                             className="w-20 rounded-full"
                             alt="Victor Chigbo"
                         />
-                        <h1 className="text-2xl md:text-xl text-white font-bold">
+                        <h1 className="text-2xl md:text-3xl text-white font-bold">
                             Victor Chigbo
                         </h1>
                     </div>
                     <div>
-                        <p className="text-white mt-4 text-xl md:text-sm">
+                        <p className="text-white mt-4 text-xl md:text-3xl">
                             I am a frontend developer who loves to build
                             user-intuitive and accessible web applications. I am
                             proficient in HTML, CSS, and Javascript. I am also
@@ -101,21 +96,16 @@ const Mainpage = () => {
                             together.
                         </p>
                     </div>
-                    <div className="flex flex-row items-center text-white mt-2 text-xl md:text-sm">
-                        Stack:
-                        <div className="flex flex-row items-center space-x-2 text-2xl md:text-xl ml-2">
+                    <div className="flex flex-row justify-evenly items-center gap-2 text-3xl md:text-3xl ml-2 mt-2 md:mt-10">
                             <FaJs className="text-yellow-400" />
                             <FaBootstrap style={{ color: "#7952B3" }} />
                             <RiTailwindCssFill style={{ color: "#06B6D4" }} />
                             <FaReact style={{ color: "#61DAFB" }} />
                             <BiLogoTypescript style={{ color: "#3178C6" }} />
-                            <RiNextjsFill />
+                            <SiNextdotjs className="text-white" />
                             <SiChakraui style={{ color: "#319795" }} />
                         </div>
-                    </div>
-                    <div className="flex flex-row items-center text-white mt-2 text-xl md:text-sm">
-                        Let's connect:
-                        <div className="flex flex-row items-center space-x-2 text-2xl md:text-xl ml-2 text-white">
+                    <div className="flex flex-row justify-around items-center space-x-2 text-3xl md:text-4xl mt-5 ml-2 text-white">
                             <a
                                 href="https://x.com/chivicks_hazard"
                                 target="_blank"
@@ -145,7 +135,6 @@ const Mainpage = () => {
                                 <Icon icon={"email"} />
                             </a>
                         </div>
-                    </div>
                 </div>
             </div>
             <main>
@@ -154,24 +143,24 @@ const Mainpage = () => {
                         <img
                             src={profilePic}
                             alt="Victor Chigbo"
-                            className="mx-auto d-block col-span-1 row-span-1 md:w-1/3"
+                            className="mx-auto col-span-1 row-span-1 md:w-1/3 brightness-75 max-xs:contrast-[0.9]"
                         />
                         <div className="col-span-1 row-span-1">
-                            <p>
+                            <p className="text-2xl">
                                 Hi there
                                 <br />
                                 My name is
                             </p>
-                            <h1 className="text-5xl text-aliceblue mt-3">
+                            <h1 className="text-3xl md:text-5xl text-aliceblue mt-3">
                                 Victor Chigbo
                             </h1>
-                            <p className="my-text mt-10">
+                            <p className="text-xl md:text-2xl mt-10">
                                 I am a frontend developer who loves to build
                                 responsive, user-intuitive and accessible web
                                 applications.
                             </p>
 
-                            <div className="flex flex-row justify-start text-xl gap-3 mt-4">
+                            <div className="flex flex-row justify-start text-xl md:text-3xl gap-3 mt-4">
                                 {socialLinks.map((socialLink) => {
                                     return (
                                         <a
@@ -181,6 +170,7 @@ const Mainpage = () => {
                                             data-bs-toggle="tooltip"
                                             data-bs-placement="top"
                                             title={socialLink.title}
+                                            className="hover:text-aliceblue ease-in"
                                         >
                                             <Icon icon={socialLink.icon} />
                                         </a>
@@ -195,4 +185,4 @@ const Mainpage = () => {
     );
 };
 
-export default Mainpage;
+export default MainPage;
