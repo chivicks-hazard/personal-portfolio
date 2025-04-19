@@ -4,19 +4,29 @@ const Skills = () => {
     const skills = [
         { skill: "HTML", class: "html" },
         { skill: "CSS", class: "css" },
-        { skill: "JavaScript", class: "javascript", },
+        { skill: "JavaScript", class: "javascript" },
         { skill: "Bootstrap", class: "bootstrap" },
         { skill: "Tailwind CSS", class: "tailwindcss" },
         { skill: "React", class: "react" },
         { skill: "TypeScript", class: "typescript" },
         { skill: "Chart JS", class: "chartjs" },
+        {
+            skill: "Chakra UI",
+            class: "charka-ui",
+        },
+        {
+            skill: "NextJS",
+            class: "nextjs",
+        },
     ];
 
     return (
         <section id="skillset">
-            <div className="mt-5 pt-3 max-sm:mx-3"> 
-                <h2 class="text-center mb-5 mt-5 text-3xl text-ghostwhite">Skills</h2>
-                <div class="language mt-1 grid grid-rows-2 grid-cols-3 gap-2 md:mx-40">
+            <div className="mt-5 pt-3 max-sm:mx-3">
+                <h2 class="text-center mb-5 mt-5 text-3xl text-ghostwhite">
+                    Skills
+                </h2>
+                <div class="language mt-1 grid grid-cols-3 gap-2 md:mx-40">
                     {skills.map((skill, index) => {
                         return (
                             <div

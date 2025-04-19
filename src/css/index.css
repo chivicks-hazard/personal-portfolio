@@ -6,7 +6,7 @@
 
 @view-transition {
     navigation: auto;
-  }
+}
 
 :root {
     --html: #f06529;
@@ -18,6 +18,8 @@
     --java: #c05d16;
     --typescript: #3178c6;
     --chartjs: #fe777b;
+    --charka-ui: #319795;
+    --nextjs: #ffffff;
 }
 
 .html {
@@ -46,6 +48,12 @@
 }
 .chartjs {
     color: var(--chartjs);
+}
+.charka-ui {
+    color: var(--charka-ui);
+}
+.nextjs {
+    color: var(--nextjs);
 }
 
 body {

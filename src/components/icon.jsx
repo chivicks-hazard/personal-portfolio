@@ -16,7 +16,7 @@ import {
     FaXTwitter,
 } from "react-icons/fa6";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiChartdotjs } from "react-icons/si";
+import { SiChakraui, SiChartdotjs, SiNextdotjs } from "react-icons/si";
 
 const Icon = ({ icon }) => {
     switch (icon) {
@@ -67,6 +67,12 @@ const Icon = ({ icon }) => {
 
         case "chartjs":
             return <SiChartdotjs />;
+
+        case "charka-ui":
+            return <SiChakraui />;
+
+        case "nextjs":
+            return <SiNextdotjs />;
 
         default:
             break;

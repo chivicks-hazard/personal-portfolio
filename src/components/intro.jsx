@@ -1,4 +1,4 @@
-import myPfp from "../assets/images/profile_pic_1.jpg";
+import myPfp from "/images/profile_pic_1.jpg";
 
 const intro = () => {
     return (
