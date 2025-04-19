@@ -1,9 +1,10 @@
-import flavorfiesta from "../assets/images/flavorfiesta.jpg";
-import cliConverter from "../assets/images/cli-converter.gif";
-import opay from "../assets/images/my-opay-clone.gif";
-import dashboard from "../assets/images/dashboard.png";
+import flavorfiesta from "/images/flavorfiesta.jpg";
+import cliConverter from "/images/cli-converter.gif";
+import opay from "/images/my-opay-clone.gif";
+import dashboard from "/images/dashboard.png";
 import Icon from "./icon";
 import { FaArrowUpRightFromSquare, FaGithub } from "react-icons/fa6";
+import { motion } from "framer-motion";
 
 const Projects = () => {
     const projects = [
@@ -49,16 +50,20 @@ const Projects = () => {
 
     return (
         <section id="projects">
-            <div className="mt-20 pt-3 max-sm:mx-3">
+            <div className="mt-40 pt-3 max-sm:mx-3">
                 <h2 class="text-center mb-5 mt-5 text-3xl text-ghostwhite">
                     Projects
                 </h2>
 
-                <div className="flex flex-col mt-5 items-center gap-5">
+                <div className="flex flex-col mt-20 items-center gap-36">
                     {projects.map((project, index) => (
-                        <div
+                        <motion.div
                             className=" border-2 border-ivory rounded max-xs:w-fit w-1/2"
                             key={index}
+                            initial={{ opacity: 0, y: 100 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5 }}
+                            viewport={{ once: true }}
                         >
                             <h3 className="text-lg text-ivory border-b border-ivory p-2">
                                 {project.name}
@@ -68,7 +73,9 @@ const Projects = () => {
                                 alt={project.name}
                                 className="border-b border-ivory"
                             />
-                            <p className="p-2 md:text-xl">{project.description}</p>
+                            <p className="p-2 md:text-xl">
+                                {project.description}
+                            </p>
                             <div className="flex flex-row justify-between items-center p-2 border-t border-ivory">
                                 <div className="flex flex-row items-center gap-2">
                                     {project.stack.map((stack, index) => (
@@ -99,7 +106,7 @@ const Projects = () => {
                                     </a>
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
             </div>

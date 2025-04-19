@@ -1,4 +1,4 @@
-import futo from "../assets/images/futo.png";
+import futo from "/images/futo.png";
 
 const Education = () => {
     return (

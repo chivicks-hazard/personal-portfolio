@@ -1,5 +1,4 @@
-
-import profilePic from "../assets/images/profile_pic_1.jpg";
+import profilePic from "/images/profile_pic_1.jpg";
 import {
     FaBootstrap,
     FaGithub,
@@ -13,12 +12,11 @@ import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { BiLogoTypescript } from "react-icons/bi";
 import { SiChakraui } from "react-icons/si";
 import { useEffect, useState } from "react";
-import { Tooltip } from "bootstrap";
 import Icon from "../components/icon";
 import { SiNextdotjs } from "react-icons/si";
 
 const MainPage = () => {
-    const [clickCount, setClickCount] = useState(0);
+    const [clickCount, setClickCount] = useState(1);
     const [showBackdrop, setShowBackdrop] = useState();
 
     const socialLinks = [
@@ -44,15 +42,6 @@ const MainPage = () => {
         },
     ];
 
-    useEffect(() => {
-        const tooltipTriggerList = document.querySelectorAll(
-            '[data-bs-toggle="tooltip"]',
-        );
-        const tooltipList = [...tooltipTriggerList].map(
-            (tooltipTriggerEl) => new Tooltip(tooltipTriggerEl),
-        );
-    }, []);
-
     const handleClick = () => {
         setClickCount((prevCount) => {
             const clickCount = prevCount + 1;
@@ -67,12 +56,14 @@ const MainPage = () => {
     return (
         <div className="">
             {/* Create a fullscreen backdrop blur cover with TailwindCSS */}
-            <div
+            {/* <div
                 className={`fixed inset-0 bg-black bg-opacity-50 backdrop-blur-md z-10 flex justify-center items-center ${showBackdrop}`}
                 onClick={handleClick}
             >
                 <div className="w-full text-center warning absolute top-0 right-0">
-                    <h1 className="text-2xl md:text-6xl text-aliceblue">Portfolio Under Reconstruction</h1>
+                    <h1 className="text-2xl md:text-6xl text-aliceblue">
+                        Portfolio Under Reconstruction
+                    </h1>
                 </div>
 
                 <div className="border-2 border-gray-400 p-4 md:p-5 rounded-lg w-3/4 mt-5 max-xs:mt-10">
@@ -97,53 +88,53 @@ const MainPage = () => {
                         </p>
                     </div>
                     <div className="flex flex-row justify-evenly items-center gap-2 text-3xl md:text-3xl ml-2 mt-2 md:mt-10">
-                            <FaJs className="text-yellow-400" />
-                            <FaBootstrap style={{ color: "#7952B3" }} />
-                            <RiTailwindCssFill style={{ color: "#06B6D4" }} />
-                            <FaReact style={{ color: "#61DAFB" }} />
-                            <BiLogoTypescript style={{ color: "#3178C6" }} />
-                            <SiNextdotjs className="text-white" />
-                            <SiChakraui style={{ color: "#319795" }} />
-                        </div>
+                        <FaJs className="text-yellow-400" />
+                        <FaBootstrap style={{ color: "#7952B3" }} />
+                        <RiTailwindCssFill style={{ color: "#06B6D4" }} />
+                        <FaReact style={{ color: "#61DAFB" }} />
+                        <BiLogoTypescript style={{ color: "#3178C6" }} />
+                        <SiNextdotjs className="text-white" />
+                        <SiChakraui style={{ color: "#319795" }} />
+                    </div>
                     <div className="flex flex-row justify-around items-center space-x-2 text-3xl md:text-4xl mt-5 ml-2 text-white">
-                            <a
-                                href="https://x.com/chivicks_hazard"
-                                target="_blank"
-                                rel="referrer noreferrer"
-                            >
-                                <Icon icon="twitter" />
-                            </a>
-                            <a
-                                href="https://linkedin.com/in/victorchigbo"
-                                target="_blank"
-                                rel="referrer noreferrer"
-                            >
-                                <Icon icon={"linkedin"} />
-                            </a>
-                            <a
-                                href="https://github.com/chivicks-hazard"
-                                target="_blank"
-                                rel="referrer noreferrer"
-                            >
-                                <Icon icon={"github"} />
-                            </a>
-                            <a
-                                href="mailto:victorchigbodev@gmail.com"
-                                target="_blank"
-                                rel="referrer noreferrer"
-                            >
-                                <Icon icon={"email"} />
-                            </a>
-                        </div>
+                        <a
+                            href="https://x.com/chivicks_hazard"
+                            target="_blank"
+                            rel="referrer noreferrer"
+                        >
+                            <Icon icon="twitter" />
+                        </a>
+                        <a
+                            href="https://linkedin.com/in/victorchigbo"
+                            target="_blank"
+                            rel="referrer noreferrer"
+                        >
+                            <Icon icon={"linkedin"} />
+                        </a>
+                        <a
+                            href="https://github.com/chivicks-hazard"
+                            target="_blank"
+                            rel="referrer noreferrer"
+                        >
+                            <Icon icon={"github"} />
+                        </a>
+                        <a
+                            href="mailto:victorchigbodev@gmail.com"
+                            target="_blank"
+                            rel="referrer noreferrer"
+                        >
+                            <Icon icon={"email"} />
+                        </a>
+                    </div>
                 </div>
-            </div>
+            </div> */}
             <main>
                 <section id="intro">
                     <div className="flex flex-col gap-5 mt-32 items-center mx-5 md:flex-row">
                         <img
                             src={profilePic}
                             alt="Victor Chigbo"
-                            className="mx-auto col-span-1 row-span-1 md:w-1/3 brightness-75 max-xs:contrast-[0.9]"
+                            className="mx-auto rounded-sm col-span-1 row-span-1 md:w-1/3 brightness-75 max-xs:contrast-[0.9]"
                         />
                         <div className="col-span-1 row-span-1">
                             <p className="text-2xl">
@@ -167,8 +158,6 @@ const MainPage = () => {
                                             href={socialLink.link}
                                             target="_blank"
                                             rel="referrer noreferrer"
-                                            data-bs-toggle="tooltip"
-                                            data-bs-placement="top"
                                             title={socialLink.title}
                                             className="hover:text-aliceblue ease-in"
                                         >

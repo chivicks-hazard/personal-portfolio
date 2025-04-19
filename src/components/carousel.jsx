@@ -1,8 +1,8 @@
 import { FaArrowUpRightFromSquare, FaGithub } from "react-icons/fa6";
-import flavorfiesta from "../assets/images/flavorfiesta.jpg";
-import cliConverter from "../assets/images/cli-converter.gif";
-import opay from "../assets/images/my-opay-clone.gif";
-import dashboard from "../assets/images/dashboard.png";
+import flavorfiesta from "/images/flavorfiesta.jpg";
+import cliConverter from "/images/cli-converter.gif";
+import opay from "/images/my-opay-clone.gif";
+import dashboard from "/images/dashboard.png";
 import Icon from "./icon";
 
 const Carousel = () => {
@@ -56,7 +56,9 @@ const Carousel = () => {
             <div className="carousel-inner">
                 {projects.map((project, index) => (
                     <div
-                        className={`carousel-item ${index === 0 ? "active" : ""}`}
+                        className={`carousel-item ${
+                            index === 0 ? "active" : ""
+                        }`}
                         data-bs-interval={
                             project.interval ? project.interval : 5000
                         }
