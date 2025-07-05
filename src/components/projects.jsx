@@ -2,6 +2,7 @@ import flavorfiesta from "/images/flavorfiesta.jpg";
 import cliConverter from "/images/cli-converter.gif";
 import opay from "/images/my-opay-clone.gif";
 import dashboard from "/images/dashboard.png";
+import twitterThreadMaker from "/images/twitter-thread-maker.png";
 import Icon from "./icon";
 import { FaArrowUpRightFromSquare, FaGithub } from "react-icons/fa6";
 import { motion } from "framer-motion";
@@ -17,14 +18,6 @@ const Projects = () => {
             // interval: 5000,
             link: "https://flavorfiesta.vercel.app/",
             github: "https://github.com/chivicks-hazard/landing-page",
-        },
-        {
-            name: "CLI Converter App",
-            description: "This is an app I was able to build with Java",
-            image: cliConverter,
-            // interval: 35000,
-            stack: ["java"],
-            github: "https://github.com/chivicks-hazard/java-unit-converter",
         },
         {
             name: "Opay Clone",
@@ -45,6 +38,22 @@ const Projects = () => {
             stack: ["react", "tailwindcss", "typescript", "chartjs"],
             link: "https://my-finance-dashboard.vercel.app/",
             github: "https://github.com/chivicks-hazard/finance-dashboard",
+        },
+        {
+            name: "Twitter Thread Maker",
+            description: "A tool for generating Twitter threads.",
+            image: twitterThreadMaker,
+            stack: ["react", "tailwindcss"],
+            link: "https://twitter-thread-maker-omega.vercel.app/",
+            github: "https://github.com/chivicks-hazard/twitter-thread-maker",
+        },
+        {
+            name: "CLI Converter App",
+            description: "This is an app I was able to build with Java",
+            image: cliConverter,
+            // interval: 35000,
+            stack: ["java"],
+            github: "https://github.com/chivicks-hazard/java-unit-converter",
         },
     ];
 
