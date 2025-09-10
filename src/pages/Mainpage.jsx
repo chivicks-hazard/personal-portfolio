@@ -1,19 +1,6 @@
-import profilePic from "/images/profile_pic_1.jpg";
-import {
-    FaBootstrap,
-    FaGithub,
-    FaJs,
-    FaLinkedin,
-    FaReact,
-    FaRegEnvelope,
-    FaXTwitter,
-} from "react-icons/fa6";
-import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
-import { BiLogoTypescript } from "react-icons/bi";
-import { SiChakraui } from "react-icons/si";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Icon from "../components/icon";
-import { SiNextdotjs } from "react-icons/si";
+import profilePic from "/images/profile_pic_1.jpg";
 
 const MainPage = () => {
     const [clickCount, setClickCount] = useState(1);

@@ -1,11 +1,11 @@
-import flavorfiesta from "/images/flavorfiesta.jpg";
-import cliConverter from "/images/cli-converter.gif";
-import opay from "/images/my-opay-clone.gif";
-import dashboard from "/images/dashboard.png";
-import twitterThreadMaker from "/images/twitter-thread-maker.png";
-import Icon from "./icon";
-import { FaArrowUpRightFromSquare, FaGithub } from "react-icons/fa6";
 import { motion } from "framer-motion";
+import { FaArrowUpRightFromSquare, FaGithub } from "react-icons/fa6";
+import Icon from "./icon";
+import cliConverter from "/images/cli-converter.gif";
+import dashboard from "/images/dashboard.png";
+import flavorfiesta from "/images/flavorfiesta.jpg";
+import opay from "/images/my-opay-clone.gif";
+import twitterThreadMaker from "/images/twitter-thread-maker.png";
 
 const Projects = () => {
     const projects = [
