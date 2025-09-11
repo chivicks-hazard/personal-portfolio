@@ -1,103 +1,121 @@
-import pkg from "react-router-dom";
-import profilePic from "/images/ghibli-avatar.jpg";
+"use client";
+
 import { IoHome } from "react-icons/io5";
 import { FaCode, FaUser } from "react-icons/fa6";
 import { MdPeopleAlt, MdSchool } from "react-icons/md";
-import { FaQuoteLeft } from "react-icons/fa";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import ghibliMask from "../../../public/images/ghibli-mask.png";
+import Image from "next/image";
 
-const NavBar = () => {
-  // If you want the component to manage its own state
+const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const { NavLink } = pkg;
 
   const handleClick = () => {
     setIsOpen(!isOpen);
   };
 
+  useEffect(() => {
+    const handleDocumentClick = (event) => {
+      if (!event.target.closest(".navbar")) {
+        setIsOpen(false);
+      }
+    };
+
+    const mediaQuery = window.matchMedia("(max-width: 640px)"); // max-sm: breakpoint
+
+    if (mediaQuery.matches) {
+      document.body.addEventListener("click", handleDocumentClick);
+    }
+
+    return () => {
+      document.body.removeEventListener("click", handleDocumentClick);
+    };
+  }, [setIsOpen]);
+
   return (
     <div>
       <nav className="fixed top-0 left-0 right-0 z-10">
         <div className="flex flex-row justify-between items-center p-1 mx-3 bg-opacity-50 backdrop-blur-md">
-          <img
-            src={profilePic}
+          <Image
+            src={ghibliMask}
             alt="Victor Chigbo"
             className="w-16 rounded-full flex-start"
           />
 
-          <div className="flex-end flex flex-row space-x-5 max-xs:flex-column max-sm:hidden">
-            <NavLink
-              to="/"
+          <div className="flex-end flex flex-row gap-8 max-xs:flex-column max-sm:hidden">
+            <Link
+              href="/"
               className="md:hover:scale-150 ease-in duration-500 inline-flex flex-row items-start gap-1"
             >
               <IoHome className="text-white text-lg" />
               <span>Home</span>
-            </NavLink>
-            <NavLink
-              to="/about"
+            </Link>
+            <Link
+              href="/about"
               className="md:hover:scale-150 ease-in duration-500 inline-flex flex-row items-start gap-1"
             >
               <FaUser className="text-white text-lg" />
               <span>About</span>
-            </NavLink>
-            <NavLink
-              to="/portfolio"
+            </Link>
+            <Link
+              href="/portfolio"
               className="md:hover:scale-150 ease-in duration-500 inline-flex flex-row items-start gap-1"
             >
               <FaCode className="text-white text-lg" />
               <span>Portfolio</span>
-            </NavLink>
-            <NavLink
-              to="/communities"
+            </Link>
+            <Link
+              href="/communities"
               className="md:hover:scale-150 ease-in duration-500 inline-flex flex-row items-start gap-1"
             >
               <MdPeopleAlt className="text-white text-lg" />
               <span>Communities</span>
-            </NavLink>
+            </Link>
           </div>
         </div>
       </nav>
 
       {/* Offcanvas navbar */}
       <div
-        className={`fixed top-0 bottom-0 right-0 ease-in-out duration-500 z-10 ${
+        className={`fixed top-0 bottom-0 right-0 ease-in-out duration-500 z-10 landscape:max-lg:hidden ${
           isOpen ? "w-7/12" : "w-0"
         }`}
       >
         <div className="p-5 bg-opacity-50 backdrop-blur-md h-full">
           <div className="flex-end flex flex-col gap-5 text-xl pt-12">
-            <NavLink
+            <Link
               onClick={handleClick}
-              to="/"
+              href="/"
               className="md:hover:scale-150 ease-in duration-500 inline-flex flex-row items-start gap-1"
             >
               <IoHome className="text-white" />
               <span>Home</span>
-            </NavLink>
-            <NavLink
+            </Link>
+            <Link
               onClick={handleClick}
-              to="/about"
+              href="/about"
               className="md:hover:scale-150 ease-in duration-500 inline-flex flex-row items-start gap-1"
             >
               <FaUser className="text-white" />
               <span>About</span>
-            </NavLink>
-            <NavLink
+            </Link>
+            <Link
               onClick={handleClick}
-              to="/portfolio"
+              href="/portfolio"
               className="md:hover:scale-150 ease-in duration-500 inline-flex flex-row items-start gap-1"
             >
               <FaCode className="text-white" />
               <span>Portfolio</span>
-            </NavLink>
-            <NavLink
+            </Link>
+            <Link
               onClick={handleClick}
-              to="/communities"
+              href="/communities"
               className="md:hover:scale-150 ease-in duration-500 inline-flex flex-row items-start gap-1"
             >
               <MdPeopleAlt className="text-white" />
               <span>Communities</span>
-            </NavLink>
+            </Link>
           </div>
         </div>
       </div>
@@ -126,4 +144,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default Navbar;
