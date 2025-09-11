@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+:root {
+  --html: #f06529;
+  --css: #2965f1;
+  --javascript: #ffff00;
+  --bootstrap: #6e2cf2;
+  --tailwindcss: #38bdf8;
+  --react: #61dbfb;
+  --java: #c05d16;
+  --typescript: #3178c6;
+  --chartjs: #fe777b;
+  --charka-ui: #319795;
+  --nextjs: #ffffff;
+  --ghostwhite: #f8f8ff;
+  --ivory: #fffff0;
+  --aliceblue: #f0f8ff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-josefin-sans: var(--font-josefin-sans);
+  --color-ghostwhite: var(--ghostwhite);
+  --color-ivory: var(--ivory);
+  --color-aliceblue: var(--aliceblue);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  font-family: var(--font-josefin-sans), sans-serif !important;
+  background: rgb(13, 12, 12);
+  color: lightgray !important;
+}
+
+.html {
+  color: var(--html);
+}
+.css {
+  color: var(--css);
+}
+.javascript {
+  color: var(--javascript);
+}
+.bootstrap {
+  color: var(--bootstrap);
+}
+.tailwindcss {
+  color: var(--tailwindcss);
+}
+.react {
+  color: var(--react);
+}
+.java {
+  color: var(--java);
+}
+.typescript {
+  color: var(--typescript);
+}
+.chartjs {
+  color: var(--chartjs);
+}
+.charka-ui {
+  color: var(--charka-ui);
+}
+.nextjs {
+  color: var(--nextjs);
+}
