@@ -37,14 +37,14 @@ const HomePage = () => {
       <main>
         <section id="intro">
           <div className="flex flex-col gap-5 mt-32 items-center mx-5 md:flex-row">
-            <div className="w-1/3 relative">
-              <Image
-                src="/images/profile_pic_1.jpg"
-                fill
-                alt="Victor Chigbo"
-                className="mx-auto rounded-sm col-span-1 row-span-1 md:w-1/3"
-              />
-            </div>
+            <Image
+              src="/images/profile_pic_1.jpg"
+              alt="Victor Chigbo"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="mx-auto rounded-sm col-span-1 row-span-1 w-full md:w-1/3"
+            />
             <div className="col-span-1 row-span-1">
               <p className="text-2xl">
                 Hi there
