@@ -5,7 +5,6 @@ import { FaCode, FaUser } from "react-icons/fa6";
 import { MdPeopleAlt, MdSchool } from "react-icons/md";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-// import ghibliMask from "../../../public/images/ghibli-mask.png";
 import Image from "next/image";
 
 const Navbar = () => {

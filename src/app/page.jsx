@@ -1,6 +1,5 @@
 import Icon from "../components/icon";
 import Link from "next/link";
-import profilePic from "../../public/images/profile_pic_1.jpg";
 import Image from "next/image";
 
 export const metadata = {

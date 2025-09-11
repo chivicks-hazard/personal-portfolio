@@ -1,9 +1,5 @@
 "use client";
-// import flavorfiesta from "../../../public/images/flavorfiesta.jpg";
-// import cliConverter from "../../../public/images/cli-converter.gif";
-// import opay from "../../../public/images/my-opay-clone.gif";
-// import dashboard from "../../../public/images/dashboard.png";
-// import twitterThreadMaker from "../../../public/images/twitter-thread-maker.png";
+
 import Icon from "./icon";
 import { FaArrowUpRightFromSquare, FaGithub } from "react-icons/fa6";
 import { motion } from "motion/react";
@@ -45,6 +41,7 @@ const Projects = () => {
       name: "Twitter Thread Maker",
       description: "A tool for generating Twitter threads.",
       image: "/images/twitter-thread-maker.png",
+
       stack: ["react", "tailwindcss"],
       link: "https://twitter-thread-maker-omega.vercel.app/",
       github: "https://github.com/chivicks-hazard/twitter-thread-maker",
