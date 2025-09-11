@@ -4,6 +4,8 @@ This is the repository containing the source code to my protfolio website. You c
 
 ### Technologies Used
 
-- <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original-wordmark.svg" alt="bootstrap" width="40" height="40"/>
-- <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="40" height="40"/>
-- <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40" />
+- <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img height="32" width="32" src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="javascript" /> </a>
+- <a href="https://react.dev/" target="_blank" rel="noreferrer"> <img height="32" width="32" src="https://cdn.simpleicons.org/react/61DAFB" alt="react" /> </a>
+- <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img height="32" width="32" src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="tailwindcss" /> </a>
+- <a href="https://nextjs.org//" target="_blank" rel="noreferrer"> <img height="32" width="32" src="https://cdn.simpleicons.org/nextdotjs/ffffff" alt="nextjs" /> </a>
+
