@@ -46,8 +46,11 @@ const CommunitiesPage = () => {
             className="flex justify-between items-start max-xs:gap-5 md:items-center flex-row max-sm:flex-col mt-20"
           >
             <Image
-              src={gdgfuto}
+              src="/images/gdgfuto.jpg"
               alt="GDG FUTO"
+              width={0}
+              height={0}
+              sizes="100vw"
               className="md:mx-auto rounded-sm col-span-1 row-span-1 w-1/2 md:w-1/4"
             />
 
@@ -88,8 +91,11 @@ const CommunitiesPage = () => {
             className="flex justify-between items-start max-xs:gap-5 md:items-center flex-row max-sm:flex-col mt-20"
           >
             <Image
-              src={gdg}
+              src="/images/gdg.jpg"
               alt="GDG: Owerri"
+              width={0}
+              height={0}
+              sizes="100vw"
               className="md:mx-auto rounded-sm col-span-1 row-span-1 w-1/2 md:w-1/4"
             />
 
@@ -114,7 +120,10 @@ const CommunitiesPage = () => {
             className="flex justify-between items-start max-xs:gap-5 md:items-center flex-row max-sm:flex-col mt-20"
           >
             <Image
-              src={ieee}
+              src="/images/ieee.jpeg"
+              width={0}
+              height={0}
+              sizes="100vw"
               alt="Institute of Electrical and Electronics Engineers"
               className="md:mx-auto rounded-sm col-span-1 row-span-1 w-1/2 md:w-1/4"
             />
@@ -154,8 +163,11 @@ const CommunitiesPage = () => {
             className="flex justify-between items-start max-xs:gap-5 md:items-center flex-row max-sm:flex-col mt-20"
           >
             <Image
-              src={hack4futo}
-              alt="Institute of Electrical and Electronics Engineers"
+              src="/images/hack4futo.jpg"
+              width={0}
+              height={0}
+              sizes="100vw"
+              alt="Hack4FUTO"
               className="md:mx-auto rounded-sm col-span-1 row-span-1 w-1/2 md:w-1/4"
             />
 

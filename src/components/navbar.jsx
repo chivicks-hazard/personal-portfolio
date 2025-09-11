@@ -36,14 +36,14 @@ const Navbar = () => {
     <div>
       <nav className="fixed top-0 left-0 right-0 z-10">
         <div className="flex flex-row justify-between items-center p-1 mx-3 bg-opacity-50 backdrop-blur-md">
-          <div className="w-16 relative">
-            <Image
-              src="images/ghibli-mask.png"
-              fill
-              alt="Victor Chigbo"
-              className="rounded-full flex-start"
-            />
-          </div>
+          <Image
+            src="/images/ghibli-mask.png"
+            alt="Victor Chigbo"
+            width={0}
+            height={0}
+            sizes="100vw"
+            className="w-16 rounded-full flex-start"
+          />
 
           <div className="flex-end flex flex-row gap-8 max-xs:flex-column max-sm:hidden">
             <Link
@@ -53,13 +53,13 @@ const Navbar = () => {
               <IoHome className="text-white text-lg" />
               <span>Home</span>
             </Link>
-            <Link
+            {/* <Link
               href="/about"
               className="md:hover:scale-150 ease-in duration-500 inline-flex flex-row items-start gap-1"
             >
               <FaUser className="text-white text-lg" />
               <span>About</span>
-            </Link>
+            </Link> */}
             <Link
               href="/portfolio"
               className="md:hover:scale-150 ease-in duration-500 inline-flex flex-row items-start gap-1"
@@ -94,14 +94,14 @@ const Navbar = () => {
               <IoHome className="text-white" />
               <span>Home</span>
             </Link>
-            <Link
+            {/* <Link
               onClick={handleClick}
               href="/about"
               className="md:hover:scale-150 ease-in duration-500 inline-flex flex-row items-start gap-1"
             >
               <FaUser className="text-white" />
               <span>About</span>
-            </Link>
+            </Link> */}
             <Link
               onClick={handleClick}
               href="/portfolio"
