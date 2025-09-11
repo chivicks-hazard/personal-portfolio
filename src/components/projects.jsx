@@ -16,16 +16,18 @@ const Projects = () => {
       // interval: 5000,
       link: "https://flavorfiesta.vercel.app/",
       github: "https://github.com/chivicks-hazard/landing-page",
+      unoptimized: false,
     },
     {
       name: "Opay Clone",
       description:
         "This is a project used to exercise my skills in React and Tailwind CSS",
-      image: "images/my-opay-clone.gif",
+      image: "/images/my-opay-clone.gif",
       // interval: 35000,
       stack: ["react", "tailwindcss"],
       link: "https://my-opay-clone.vercel.app/",
       github: "https://github.com/chivicks-hazard/opay-clone",
+      unoptimized: true,
     },
     {
       name: "Finance Dashboard",
@@ -36,6 +38,7 @@ const Projects = () => {
       stack: ["react", "tailwindcss", "typescript", "chartjs"],
       link: "https://my-finance-dashboard.vercel.app/",
       github: "https://github.com/chivicks-hazard/finance-dashboard",
+      unoptimized: false,
     },
     {
       name: "Twitter Thread Maker",
@@ -45,6 +48,7 @@ const Projects = () => {
       stack: ["react", "tailwindcss"],
       link: "https://twitter-thread-maker-omega.vercel.app/",
       github: "https://github.com/chivicks-hazard/twitter-thread-maker",
+      unoptimized: false,
     },
     {
       name: "CLI Converter App",
@@ -53,6 +57,7 @@ const Projects = () => {
       // interval: 35000,
       stack: ["java"],
       github: "https://github.com/chivicks-hazard/java-unit-converter",
+      unoptimized: true,
     },
   ];
 
@@ -66,7 +71,7 @@ const Projects = () => {
         <div className="flex flex-col mt-20 items-center gap-36">
           {projects.map((project, index) => (
             <motion.div
-              className=" border-2 border-ivory rounded max-xs:w-fit md:w-1/2 relative"
+              className=" border-2 border-ivory rounded md:max-sm:w-full md:w-1/2"
               key={index}
               initial={{ opacity: 0, y: 100 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -79,8 +84,11 @@ const Projects = () => {
               <Image
                 src={project.image}
                 alt={project.name}
-                fill
-                className="border-b border-ivory object-cover"
+                unoptimized={project.unoptimized}
+                width={0}
+                height={0}
+                sizes="100vw"
+                className="border-b border-ivory max-xs:w-fit w-full"
               />
               <p className="p-2 md:text-xl">{project.description}</p>
               <div className="flex flex-row justify-between items-center p-2 border-t border-ivory">
