@@ -11,23 +11,37 @@ import {
   FaJava,
   FaJs,
   FaLinkedin,
+  FaNode,
+  FaNodeJs,
   FaReact,
   FaRegEnvelope,
   FaXTwitter,
 } from "react-icons/fa6";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiChakraui, SiChartdotjs, SiNextdotjs } from "react-icons/si";
+import {
+  SiChakraui,
+  SiChartdotjs,
+  SiCss3,
+  SiExpress,
+  SiHtml5,
+  SiJavascript,
+  SiMysql,
+  SiNextdotjs,
+  SiRedux,
+  SiSpring,
+  SiSpringboot,
+} from "react-icons/si";
 
 const Icon = ({ icon }) => {
   switch (icon) {
     case "html":
-      return <FaHtml5 />;
+      return <SiHtml5 />;
 
     case "css":
-      return <FaCss3Alt />;
+      return <SiCss3 />;
 
     case "javascript":
-      return <FaJs />;
+      return <SiJavascript />;
 
     case "bootstrap":
       return <FaBootstrap />;
@@ -73,6 +87,24 @@ const Icon = ({ icon }) => {
 
     case "nextjs":
       return <SiNextdotjs />;
+
+    case "spring":
+      return <SiSpring />;
+
+    case "springboot":
+      return <SiSpringboot />;
+
+    case "redux":
+      return <SiRedux />;
+
+    case "nodejs":
+      return <FaNode />;
+
+    case "expressjs":
+      return <SiExpress />;
+
+    case "mysql":
+      return <SiMysql />;
 
     default:
       break;
