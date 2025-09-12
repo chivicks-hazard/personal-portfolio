@@ -9,7 +9,7 @@ const Skills = () => {
     { skill: "Tailwind CSS", class: "tailwindcss" },
     { skill: "React", class: "react" },
     { skill: "TypeScript", class: "typescript" },
-    { skill: "Chart JS", class: "chartjs" },
+    // { skill: "Chart JS", class: "chartjs" },
     {
       skill: "Chakra UI",
       class: "charka-ui",

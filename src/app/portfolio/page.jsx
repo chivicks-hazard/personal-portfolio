@@ -2,27 +2,6 @@ import React from "react";
 import Skills from "../../components/skills";
 import Projects from "../../components/projects";
 
-export const metadata = {
-  title: "Portfolio",
-  openGraph: {
-    title: "Victor Chigbo | Portfolio",
-    description: "Chivicks Hazard's Portfolio",
-    type: "website",
-  },
-  keywords: [
-    "Victor",
-    "Chigbo",
-    "chivicks_hazard",
-    "Chivicks",
-    "Hazard",
-    "Victor Chigbo",
-    "Chivicks Hazard",
-    "portfolio",
-    "skills",
-    "projects",
-  ],
-};
-
 const PortfolioPage = () => {
   return (
     <main>

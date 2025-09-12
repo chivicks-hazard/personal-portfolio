@@ -12,6 +12,11 @@
   --chartjs: #fe777b;
   --charka-ui: #319795;
   --nextjs: #ffffff;
+  --expressjs: #ffffff;
+  --spring: #6db52d;
+  --redux: #754bb7;
+  --nodejs: #5da04c;
+  --mysql: #3e6e94;
   --ghostwhite: #f8f8ff;
   --ivory: #fffff0;
   --aliceblue: #f0f8ff;
@@ -73,4 +78,19 @@ body {
 }
 .nextjs {
   color: var(--nextjs);
+}
+.nodejs {
+  color: var(--nodejs);
+}
+.expressjs {
+  color: var(--expressjs);
+}
+.spring {
+  color: var(--spring);
+}
+.mysql {
+  color: var(--mysql);
+}
+.redux {
+  color: var(--redux);
 }
