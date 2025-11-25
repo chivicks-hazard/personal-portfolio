@@ -1,11 +1,15 @@
 "use client";
 
-import Icon from "./icon";
-import { FaArrowUpRightFromSquare, FaGithub } from "react-icons/fa6";
 import { motion } from "motion/react";
 import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { FaArrowUpRightFromSquare, FaGithub } from "react-icons/fa6";
+import Icon from "./icon";
 
 const Projects = () => {
+  const router = useRouter();
+
   const projects = [
     {
       name: "Flavorfiesta Bites",
@@ -50,7 +54,7 @@ const Projects = () => {
       github: "https://github.com/chivicks-hazard/twitter-thread-maker",
       unoptimized: false,
     },
-    {
+    /* {
       name: "CLI Converter App",
       description: "This is an app I was able to build with Java",
       image: "/images/cli-converter.gif",
@@ -58,7 +62,7 @@ const Projects = () => {
       stack: ["java"],
       github: "https://github.com/chivicks-hazard/java-unit-converter",
       unoptimized: true,
-    },
+    }, */
   ];
 
   return (
@@ -124,6 +128,13 @@ const Projects = () => {
             </motion.div>
           ))}
         </div>
+
+        <Link
+          href={"/portfolio/projects"}
+          className="block mx-auto text-center mt-18 text-2xl rounded hover:text-ghostwhite hover:text-3xl duration-700 ease-in-out cursor-pointer"
+        >
+          View More
+        </Link>
       </div>
     </section>
   );

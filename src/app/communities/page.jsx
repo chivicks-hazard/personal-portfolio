@@ -1,7 +1,3 @@
-import gdgfuto from "../../../public/images/gdgfuto.jpg";
-import gdg from "../../../public/images/gdg.jpg";
-import ieee from "../../../public/images/ieee.jpeg";
-import hack4futo from "../../../public/images/hack4futo.jpg";
 import Image from "next/image";
 
 export const metadata = {
@@ -62,6 +58,8 @@ const CommunitiesPage = () => {
               <p className="text-xl text-wrap">
                 Link:{" "}
                 <a
+                  target="_blank"
+                  rel="noopener noreferrer"
                   href="https://gdg.community.dev/gdg-on-campus-federal-university-of-technology-owerri-nigeria/"
                   className="text-ghostwhite hover:underline"
                 >
@@ -106,6 +104,8 @@ const CommunitiesPage = () => {
               <p className="text-xl text-wrap">
                 Link:{" "}
                 <a
+                  target="_blank"
+                  rel="noopener noreferrer"
                   href="https://gdg.community.dev/gdg-owerri/"
                   className="text-ghostwhite hover:underline"
                 >
@@ -135,6 +135,8 @@ const CommunitiesPage = () => {
               <p className="text-xl text-wrap">
                 Link:{" "}
                 <a
+                  target="_blank"
+                  rel="noopener noreferrer"
                   href="https://www.ieee.org/"
                   className="text-ghostwhite hover:underline"
                 >
@@ -178,6 +180,8 @@ const CommunitiesPage = () => {
               <p className="text-xl text-wrap">
                 Link:{" "}
                 <a
+                  target="_blank"
+                  rel="noopener noreferrer"
                   href="https://hackfuto.com/"
                   className="text-ghostwhite hover:underline"
                 >

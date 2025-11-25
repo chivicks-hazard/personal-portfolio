@@ -1,3 +1,7 @@
+"use client";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { FaArrowRight } from "react-icons/fa6";
 import Icon from "./icon";
 
 const Skills = () => {
@@ -11,14 +15,12 @@ const Skills = () => {
     { skill: "TypeScript", class: "typescript" },
     // { skill: "Chart JS", class: "chartjs" },
     {
-      skill: "Chakra UI",
-      class: "charka-ui",
-    },
-    {
       skill: "NextJS",
       class: "nextjs",
     },
   ];
+
+  const router = useRouter();
 
   return (
     <section id="skillset">
@@ -42,6 +44,17 @@ const Skills = () => {
               </div>
             );
           })}
+          <Link
+            href={"/portfolio/skills"}
+            className={`border-2 rounded py-3 px-3 row-span-1 col-span-1 flex flex-col items-center justify-center md:px-1 cursor-pointer`}
+          >
+            <span
+              className={`mt-3 text-5xl md:text-9xl text-gray-400 hover:text-ghostwhite ease-in-out duration-500`}
+            >
+              <FaArrowRight />
+            </span>
+            <p className="mt-3 text-center text-ghostwhite">View More</p>
+          </Link>
         </div>
       </div>
     </section>
