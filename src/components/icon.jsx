@@ -1,5 +1,5 @@
 "use client";
-import { BiLogoTypescript } from "react-icons/bi";
+import { BiLogoTypescript, BiLogoVisualStudio } from "react-icons/bi";
 import {
   FaBootstrap,
   FaBriefcase,
@@ -19,6 +19,9 @@ import {
   SiChartdotjs,
   SiCss3,
   SiExpress,
+  SiFigma,
+  SiGit,
+  SiGithub,
   SiHtml5,
   SiJavascript,
   SiMysql,
@@ -26,6 +29,7 @@ import {
   SiRedux,
   SiSpring,
   SiSpringboot,
+  SiVercel,
 } from "react-icons/si";
 
 const Icon = ({ icon }) => {
@@ -101,6 +105,21 @@ const Icon = ({ icon }) => {
 
     case "mysql":
       return <SiMysql />;
+
+    case "git":
+      return <SiGit />;
+
+    case "github":
+      return <SiGithub />;
+
+    case "vscode":
+      return <BiLogoVisualStudio />;
+
+    case "vercel":
+      return <SiVercel />;
+
+    case "figma":
+      return <SiFigma />;
 
     default:
       break;

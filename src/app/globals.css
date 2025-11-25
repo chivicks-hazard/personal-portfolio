@@ -17,6 +17,11 @@
   --redux: #754bb7;
   --nodejs: #5da04c;
   --mysql: #3e6e94;
+  --git: #f05032;
+  --github: #ffffff;
+  --vscode: #0a77b9;
+  --vercel: #ffffff;
+  --figma: #f24e1e;
   --ghostwhite: #f8f8ff;
   --ivory: #fffff0;
   --aliceblue: #f0f8ff;
@@ -93,4 +98,19 @@ body {
 }
 .redux {
   color: var(--redux);
+}
+.git {
+  color: var(--git);
+}
+.github {
+  color: var(--github);
+}
+.vscode {
+  color: var(--vscode);
+}
+.vercel {
+  color: var(--vercel);
+}
+.figma {
+  color: var(--figma);
 }

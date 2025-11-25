@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { FaArrowRight } from "react-icons/fa6";
 import Icon from "./icon";
@@ -43,8 +44,8 @@ const Skills = () => {
               </div>
             );
           })}
-          <div
-            onClick={() => router.push("/portfolio/skills")}
+          <Link
+            href={"/portfolio/skills"}
             className={`border-2 rounded py-3 px-3 row-span-1 col-span-1 flex flex-col items-center justify-center md:px-1 cursor-pointer`}
           >
             <span
@@ -52,8 +53,8 @@ const Skills = () => {
             >
               <FaArrowRight />
             </span>
-            <p className="mt-3 text-center text-ghostwhite">See More</p>
-          </div>
+            <p className="mt-3 text-center text-ghostwhite">View More</p>
+          </Link>
         </div>
       </div>
     </section>

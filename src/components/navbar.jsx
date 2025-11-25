@@ -1,19 +1,25 @@
 "use client";
 
-import { IoHome } from "react-icons/io5";
-import { FaCode, FaUser } from "react-icons/fa6";
-import { MdPeopleAlt, MdSchool } from "react-icons/md";
-import { useState, useEffect } from "react";
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
+import { FaCode } from "react-icons/fa6";
+import { IoHome } from "react-icons/io5";
+import { MdPeopleAlt } from "react-icons/md";
 
 const Navbar = () => {
   const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = () => {
-    setIsOpen(!isOpen);
+    if (isOpen) {
+      setIsOpen(false);
+    } else {
+      setIsOpen(true);
+    }
+
+    console.log(isOpen);
   };
 
   useEffect(() => {
@@ -90,7 +96,7 @@ const Navbar = () => {
         <div className="p-5 bg-opacity-50 backdrop-blur-md h-full">
           <div className="flex-end flex flex-col gap-5 text-xl pt-12">
             <Link
-              onClick={handleClick}
+              onClick={() => setIsOpen(false)}
               href="/"
               className="md:hover:scale-150 ease-in duration-500 inline-flex flex-row items-start gap-1"
             >
@@ -98,7 +104,7 @@ const Navbar = () => {
               <span>Home</span>
             </Link>
             {/* <Link
-              onClick={handleClick}
+              onClick={() => setIsOpen(false)}
               href="/about"
               className="md:hover:scale-150 ease-in duration-500 inline-flex flex-row items-start gap-1"
             >
@@ -106,7 +112,7 @@ const Navbar = () => {
               <span>About</span>
             </Link> */}
             <Link
-              onClick={handleClick}
+              onClick={() => setIsOpen(false)}
               href="/portfolio"
               className="md:hover:scale-150 ease-in duration-500 inline-flex flex-row items-start gap-1"
             >
@@ -114,7 +120,7 @@ const Navbar = () => {
               <span>Portfolio</span>
             </Link>
             <Link
-              onClick={handleClick}
+              onClick={() => setIsOpen(false)}
               href="/communities"
               className="md:hover:scale-150 ease-in duration-500 inline-flex flex-row items-start gap-1"
             >
@@ -127,7 +133,15 @@ const Navbar = () => {
 
       <div
         className="z-50 fixed top-0 right-0 p-2 cursor-pointer md:hidden"
-        onClick={handleClick}
+        onClick={() => {
+          if (isOpen === true) {
+            setIsOpen(false);
+          } else {
+            setIsOpen(true);
+          }
+
+          console.log(isOpen);
+        }}
       >
         <div
           className={`w-9 h-1 bg-white m-2 duration-500 ${
