@@ -1,9 +1,9 @@
 "use client";
 
-import Icon from "./icon";
-import { FaArrowUpRightFromSquare, FaGithub } from "react-icons/fa6";
 import { motion } from "motion/react";
 import Image from "next/image";
+import { FaArrowUpRightFromSquare, FaGithub } from "react-icons/fa6";
+import Icon from "./icon";
 
 const Projects = () => {
   const projects = [
@@ -50,7 +50,7 @@ const Projects = () => {
       github: "https://github.com/chivicks-hazard/twitter-thread-maker",
       unoptimized: false,
     },
-    {
+    /* {
       name: "CLI Converter App",
       description: "This is an app I was able to build with Java",
       image: "/images/cli-converter.gif",
@@ -58,7 +58,7 @@ const Projects = () => {
       stack: ["java"],
       github: "https://github.com/chivicks-hazard/java-unit-converter",
       unoptimized: true,
-    },
+    }, */
   ];
 
   return (
@@ -123,6 +123,10 @@ const Projects = () => {
               </div>
             </motion.div>
           ))}
+
+          <button className="text-gray-200 hover:text-ghostwhite">
+            See More
+          </button>
         </div>
       </div>
     </section>

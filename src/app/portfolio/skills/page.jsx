@@ -1,5 +1,4 @@
 import Icon from "@/components/icon";
-import React from "react";
 
 const SkillsPage = () => {
   const skills = [
@@ -19,17 +18,18 @@ const SkillsPage = () => {
       skill: "NextJS",
       class: "nextjs",
     },
-    /* {
+    {
       skill: "NodeJS",
       class: "nodejs",
     },
     {
-      skill: "ExpressJS",
-      class: "expressjs",
-    },
-    {
       skill: "Java",
       class: "java",
+    },
+    /* 
+    {
+      skill: "ExpressJS",
+      class: "expressjs",
     },
     {
       skill: "Spring + SpringBoot",
@@ -56,7 +56,7 @@ const SkillsPage = () => {
             This is a collection of my skill set, ranging from technical to
             non-technical.
           </p>
-          <div className="language mt-1 grid grid-cols-3 gap-2 md:mx-40">
+          <div className="language mt-15 grid grid-cols-3 gap-2 md:mx-40">
             {skills.map((skill, index) => {
               return (
                 <div
