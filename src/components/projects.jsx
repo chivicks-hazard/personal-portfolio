@@ -54,15 +54,17 @@ const Projects = () => {
       github: "https://github.com/chivicks-hazard/twitter-thread-maker",
       unoptimized: false,
     },
-    /* {
-      name: "CLI Converter App",
-      description: "This is an app I was able to build with Java",
-      image: "/images/cli-converter.gif",
+    {
+      name: "VIdeo Streaming Server",
+      description:
+        "This is a project I used to understand streams, and how they work, especially when sending media data across a network through a server. It is built with NodeJS.",
+      image: "/images/video-streamer.png",
       // interval: 35000,
-      stack: ["java"],
-      github: "https://github.com/chivicks-hazard/java-unit-converter",
-      unoptimized: true,
-    }, */
+      stack: ["nodejs"],
+      github:
+        "https://github.com/chivicks-hazard/nodejs-video-streaming-server",
+      unoptimized: false,
+    },
   ];
 
   return (
