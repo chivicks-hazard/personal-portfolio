@@ -59,6 +59,17 @@ const ProjectsPage = () => {
       github: "https://github.com/chivicks-hazard/java-unit-converter",
       unoptimized: true,
     },
+    {
+      name: "VIdeo Streaming Server",
+      description:
+        "This is a project I used to understand streams, and how they work, especially when sending media data across a network through a server. It is built with NodeJS.",
+      image: "/images/video-streamer.png",
+      // interval: 35000,
+      stack: ["nodejs"],
+      github:
+        "https://github.com/chivicks-hazard/nodejs-video-streaming-server",
+      unoptimized: false,
+    },
   ];
 
   return (
