@@ -70,6 +70,16 @@ const ProjectsPage = () => {
         "https://github.com/chivicks-hazard/nodejs-video-streaming-server",
       unoptimized: false,
     },
+    {
+      name: "ATM CLI Simulation",
+      description:
+        "This is a project to simulate the experience of using an ATM machine via the console.",
+      image: "/images/atm-cli.gif",
+      // interval: 35000,
+      stack: ["java"],
+      github: "https://github.com/chivicks-hazard/java-atm-cli",
+      unoptimized: true,
+    },
   ];
 
   return (
