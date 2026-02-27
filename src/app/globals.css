@@ -25,6 +25,7 @@
   --ghostwhite: #f8f8ff;
   --ivory: #fffff0;
   --aliceblue: #f0f8ff;
+  --maven: #c71a36;
 }
 
 @theme inline {
@@ -113,4 +114,7 @@ body {
 }
 .figma {
   color: var(--figma);
+}
+.maven {
+  color: var(--maven);
 }

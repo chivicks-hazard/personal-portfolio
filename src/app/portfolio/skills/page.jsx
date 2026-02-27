@@ -66,6 +66,10 @@ const SkillsPage = () => {
       tool: "Figma",
       class: "figma",
     },
+    {
+      tool: "Maven",
+      class: "maven",
+    },
   ];
 
   return (

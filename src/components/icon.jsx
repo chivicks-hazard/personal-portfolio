@@ -15,6 +15,7 @@ import {
 } from "react-icons/fa6";
 import { RiTailwindCssFill } from "react-icons/ri";
 import {
+  SiApachemaven,
   SiChakraui,
   SiChartdotjs,
   SiCss3,
@@ -120,6 +121,9 @@ const Icon = ({ icon }) => {
 
     case "figma":
       return <SiFigma />;
+
+    case "maven":
+      return <SiApachemaven />;
 
     default:
       break;
