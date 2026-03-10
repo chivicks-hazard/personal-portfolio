@@ -85,7 +85,7 @@ const HomePage = () => {
                 </div>
                 <div className="flex flex-row justify-center gap-10 mt-4 max-sm:mt-10 max-sm:w-full max-sm:gap-1">
                   <button className="text-xl p-2 hover:bg-zinc-900 hover:text-aliceblue duration-500 ease-in-out cursor-pointer">
-                    <a href="https://drive.google.com/file/d/1CvCdpnyexZrk_dpSfRSnbgfihTnMkr0T/view?usp=drive_link">
+                    <a href="https://drive.google.com/file/d/1cz1G2ino7SezEX-gzyW40eQYF1ugtSJ8/view?usp=sharing">
                       View My Resume
                     </a>
                   </button>
