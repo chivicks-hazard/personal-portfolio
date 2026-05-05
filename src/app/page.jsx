@@ -52,8 +52,7 @@ const HomePage = () => {
                   Victor Chigbo
                 </h1>
                 <h2 className="text-2xl">
-                  Tech Extrovert, Enthusiast, and Polymath || Software Engineer
-                  || Front-End Web Developer
+                  Software Engineer || Front-End Web Developer
                 </h2>
               </div>
               <div>
