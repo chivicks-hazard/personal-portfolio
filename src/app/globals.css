@@ -26,6 +26,8 @@
   --ivory: #fffff0;
   --aliceblue: #f0f8ff;
   --maven: #c71a36;
+  --emerald-green: #10b981;
+  --cyan: #06b6d4;
 }
 
 @theme inline {
@@ -37,6 +39,8 @@
   --color-ghostwhite: var(--ghostwhite);
   --color-ivory: var(--ivory);
   --color-aliceblue: var(--aliceblue);
+  --color-emerald-green: var(--emerald-green);
+  --color-cyan: var(--cyan);
 }
 
 @media (prefers-color-scheme: dark) {

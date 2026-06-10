@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const metadata = {
   title: {
-    absolute: "Victor Chigbo | Speaker Bio",
+    absolute: "Victor Chigbo | About",
   },
   description:
     "Tech Extrovert, Enthusiast and Polymath || Software Engineer || Front-End Web Developer",
@@ -35,11 +35,11 @@ const SpeakerBioPage = () => {
       <div className="mt-32">
         <div className="mt-5 pt-3 max-sm:mx-3">
           <h1 className="text-4xl md:text-6xl text-center mb-10 text-aliceblue">
-            Speaker Bio
+            About Me
           </h1>
 
           <Image
-            src="/images/profile_pic_1.jpg"
+            src="/images/profile_pic.jpg"
             alt="Victor Chigbo"
             width={0}
             height={0}
@@ -47,44 +47,59 @@ const SpeakerBioPage = () => {
             className="mx-auto rounded-sm w-full md:w-2/3 lg:w-1/3"
           />
 
-          <p className="text-xl md:text-2xl md:w-3/4 md:mx-auto mt-30 mb-10">
-            Victor Chigbo (aka Chivicks Hazard) is a software engineer and
-            frontend developer passionate about crafting responsive,
-            user-focused web interfaces that are intuitive, accessible, and
-            delightful to use. With experience building scalable frontends using
-            modern technologies like JavaScript, TypeScript, React, Next.js, and
-            Tailwind CSS, Victor prioritizes performance, accessibility, and
-            seamless user experience in every project he undertakes.
-            <br />
-            <br />
-            Victor is continuously expanding his expertise in system design,
-            software architecture, analytical problem-solving, data structures &
-            algorithms (DSA), testing, documentation, and agile development
-            practices — driven by a deep commitment to personal growth and
-            continuous learning. His approach reflects not just technical skill,
-            but a growth mindset that fuels his journey from frontend focus
-            toward fullstack capability. <br />
-            <br />
-            More than a coder, Victor is a tech extrovert, enthusiast, and
-            polymath. He loves discussing tech trends, exploring emerging
-            technologies, and picking up new skills like a gem collector.
-            Whether attending, volunteering, or speaking at events — both
-            virtually and in person — his presence is defined by curiosity,
-            energy, and connection with the tech community.
-            <br />
-            <br />
-            Victor’s engagement in tech communities has broadened his
-            professional network and strengthened his skills in community
-            management, leadership, and technology communication. He believes
-            that building relationships and sharing knowledge are fundamental to
-            personal and collective growth. <br />
-            <br />
-            Victor is open to collaborations where he can help transform ideas
-            into reality on the web, architect intuitive user experiences, and
-            contribute meaningful insights across systems and technologies. He
-            continues to learn, build, and connect — striving to elevate both
-            his craft and the communities around him.
-          </p>
+          <div className="flex flex-col gap-10 text-xl md:text-2xl md:w-3/4 md:mx-auto mt-30 mb-10">
+            <p>
+              Victor Chigbo (popularly known as{" "}
+              <strong>
+                <em>Chivicks Hazard</em>
+              </strong>
+              ) is a software engineer, frontend developer, and self-described
+              tech extrovert, enthusiast, and polymath. He specializes in
+              building responsive, user-centric, user-intuitive, and accessible
+              web applications, with a strong focus on creating digital
+              experiences that inspire ease, reliability, and trust. His
+              frontend toolkit includes technologies such as React, Next.js,
+              TypeScript, JavaScript, and Tailwind CSS.
+            </p>
+            <p>
+              Beyond frontend development, Victor is deeply invested in the
+              broader discipline of software engineering. He actively develops
+              his skills in system design, software architecture, analytical
+              thinking, problem-solving, data structures and algorithms,
+              testing, documentation, and agile development practices. His
+              philosophy centers around continuous learning and what he jokingly
+              refers to as his personal{" "}
+              <em className="font-semibold">
+                "Continuous Improvement and Continuous Development (CI/CD)"
+              </em>{" "}
+              journey.
+            </p>{" "}
+            <p>
+              A natural community builder and technology communicator, Victor
+              enjoys discussing emerging technologies, industry trends, and
+              engineering concepts with fellow technologists. Whether attending,
+              volunteering at, contributing to, or speaking at tech events, he
+              is driven by curiosity, collaboration, and a genuine passion for
+              helping others grow. His involvement in technology communities has
+              also helped him develop skills in leadership, community
+              management, and technical communication.
+            </p>{" "}
+            <p>
+              Outside of his professional work, Victor enjoys exploring a wide
+              range of technical disciplines—from web development and backend
+              engineering to Java, Node.js, software architecture, and even
+              low-level programming projects such as chess engines and CLI
+              applications. He frequently documents his learning journey through
+              articles, project logs, and technical writing, believing that
+              knowledge grows best when shared.
+            </p>{" "}
+            <p>
+              Whether building software, sharing ideas, or connecting with
+              fellow tech enthusiasts, Victor's mission remains the same: to
+              continuously learn, continuously improve, and contribute
+              meaningfully to the growth of people, products, and communities.
+            </p>
+          </div>
         </div>
       </div>
     </main>

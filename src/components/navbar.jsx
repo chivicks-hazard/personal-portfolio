@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-import { FaCode } from "react-icons/fa6";
+import { FaCode, FaUser } from "react-icons/fa6";
 import { IoHome } from "react-icons/io5";
 import { MdPeopleAlt } from "react-icons/md";
 
@@ -54,35 +54,35 @@ const Navbar = () => {
             className="w-16 rounded-full flex-start cursor-pointer"
           />
 
-          <div className="flex-end flex flex-row gap-8 max-xs:flex-column max-sm:hidden">
+          <div className="flex-end flex flex-row gap-10 max-xs:flex-column max-sm:hidden">
             <Link
               href="/"
-              className="md:hover:scale-150 ease-in duration-500 inline-flex flex-row items-start gap-1"
+              className="md:hover:scale-150 ease-in duration-500 inline-flex flex-row items-start gap-1 hover:text-cyan"
             >
-              <IoHome className="text-white text-lg" />
+              <IoHome className="text-lg ease-in duration-500 hover:text-cyan" />
               <span>Home</span>
             </Link>
-            {/* <Link
-              href="/about"
-              className="md:hover:scale-150 ease-in duration-500 inline-flex flex-row items-start gap-1"
-            >
-              <FaUser className="text-white text-lg" />
-              <span>About</span>
-            </Link> */}
             <Link
               href="/portfolio"
-              className="md:hover:scale-150 ease-in duration-500 inline-flex flex-row items-start gap-1"
+              className="md:hover:scale-150 ease-in duration-500 inline-flex flex-row items-start gap-1 hover:text-cyan"
             >
-              <FaCode className="text-white text-lg" />
+              <FaCode className="text-lg ease-in duration-500 hover:text-cyan" />
               <span>Portfolio</span>
             </Link>
             <Link
-              href="/communities"
-              className="md:hover:scale-150 ease-in duration-500 inline-flex flex-row items-start gap-1"
+              href="/about"
+              className="md:hover:scale-150 ease-in duration-500 inline-flex flex-row items-start gap-1 hover:text-cyan"
             >
-              <MdPeopleAlt className="text-white text-lg" />
-              <span>Communities</span>
+              <FaUser className="text-lg" />
+              <span>About</span>
             </Link>
+            {/* <Link
+              href="/communities"
+              className="md:hover:scale-150 ease-in duration-500 inline-flex flex-row items-start gap-1 hover:text-cyan"
+            >
+              <MdPeopleAlt className="text-lg ease-in duration-500 hover:text-cyan" />
+              <span>Communities</span>
+            </Link> */}
           </div>
         </div>
       </nav>
