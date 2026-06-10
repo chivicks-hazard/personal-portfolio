@@ -1,6 +1,7 @@
-// "use client";
-import Image from "next/image";
 import Link from "next/link";
+
+import DisplayImage from "@/components/DisplayImage";
+import DisplayHeader from "../components/DisplayHeader";
 import Icon from "../components/icon";
 
 export const metadata = {
@@ -38,24 +39,9 @@ const HomePage = () => {
       <main>
         <section id="intro">
           <div className="flex flex-col gap-5 mt-32 items-center mx-5 md:flex-row">
-            <Image
-              src="/images/profile_pic_1.jpg"
-              alt="Victor Chigbo"
-              width={0}
-              height={0}
-              sizes="100vw"
-              className="mx-auto rounded-sm col-span-1 row-span-1 w-full md:w-1/3"
-            />
+            <DisplayImage />
             <div className="col-span-1 row-span-1 md:flex md:flex-col md:justify-between md:items-start gap-5">
-              <div>
-                <h1 className="text-3xl md:text-5xl text-aliceblue mt-3">
-                  Victor Chigbo
-                </h1>
-                <h2 className="text-2xl">
-                  Tech Extrovert, Enthusiast, and Polymath || Software Engineer
-                  || Front-End Web Developer
-                </h2>
-              </div>
+              <DisplayHeader />
               <div>
                 <p className="text-xl md:text-2xl mt-10">
                   I am a software engineer and frontend developer who
@@ -68,29 +54,34 @@ const HomePage = () => {
                 </p>
                 <div className="flex flex-row justify-start text-xl md:text-3xl gap-3 mt-4">
                   <span className="text-aliceblue">Connect with me:</span>
-                  {socialLinks.map((socialLink, index) => {
-                    return (
-                      <Link
-                        key={index}
-                        href={socialLink.link}
-                        target="_blank"
-                        rel="referrer noreferrer"
-                        title={socialLink.title}
-                        className="hover:text-aliceblue ease-in"
-                      >
-                        <Icon icon={socialLink.icon} />
-                      </Link>
-                    );
-                  })}
+                  <span className="inline-flex gap-5">
+                    {socialLinks.map((socialLink, index) => {
+                      return (
+                        <Link
+                          key={index}
+                          href={socialLink.link}
+                          target="_blank"
+                          rel="referrer noreferrer"
+                          title={socialLink.title}
+                          className="hover:text-aliceblue pointer-fine:hover:-translate-y-1 duration-100 ease-in"
+                        >
+                          <Icon icon={socialLink.icon} />
+                        </Link>
+                      );
+                    })}
+                  </span>
                 </div>
-                <div className="flex flex-row justify-center gap-10 mt-4 max-sm:mt-10 max-sm:w-full max-sm:gap-1">
-                  <button className="text-xl p-2 hover:bg-zinc-900 hover:text-aliceblue duration-500 ease-in-out cursor-pointer">
+                <div className="flex flex-row max-sm:flex-col justify-start gap-10 max-sm:gap-5 mt-20 max-sm:mt-10 max-sm:w-full">
+                  <button className="text-xl p-3 max-sm:p-1 bg-zinc-900 hover:bg-zinc-700 hover:shadow shadow-cyan  duration-500 ease-in-out cursor-pointer rounded-md">
                     <a href="https://drive.google.com/file/d/1cz1G2ino7SezEX-gzyW40eQYF1ugtSJ8/view?usp=sharing">
                       View My Resume
                     </a>
                   </button>
-                  <button className="text-xl p-2 hover:bg-zinc-900 hover:text-aliceblue duration-500 ease-in-out cursor-pointer">
+                  <button className="text-xl p-3 max-sm:p-1 bg-zinc-900 hover:bg-zinc-700 hover:shadow shadow-emerald-green hover:text-aliceblue duration-500 ease-in-out cursor-pointer rounded-md">
                     <Link href={"/portfolio"}>View My Portfolio</Link>
+                  </button>
+                  <button className="text-xl p-3 max-sm:p-1 bg-zinc-900 hover:bg-zinc-700 hover:shadow shadow-emerald-green hover:text-aliceblue duration-500 ease-in-out cursor-pointer rounded-md">
+                    <Link href={"/about"}>About Me</Link>
                   </button>
                 </div>
               </div>
