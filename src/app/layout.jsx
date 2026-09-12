@@ -17,6 +17,9 @@ const JosefinSans = Josefin_Sans({
 });
 
 export const metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL || "https://chivickshazard.vercel.app/",
+  ),
   title: {
     template: "Victor Chigbo | %s",
     default: "Victor Chigbo",
@@ -27,6 +30,12 @@ export const metadata = {
     title: "Victor Chigbo",
     description: "Software Engineer || Front-End Web Developer",
     type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Victor Chigbo | Chivicks Hazard",
+    description: "Software Engineer || Front-End Web Developer",
+    creator: "@chivicks_hazard",
   },
   author: "Victor Chigbo",
   keywords: [

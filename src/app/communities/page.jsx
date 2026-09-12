@@ -3,7 +3,7 @@ import Image from "next/image";
 export const metadata = {
   title: "Communities",
   openGraph: {
-    title: "Victor Chigbo | Portfolio",
+    title: "Victor Chigbo | Communities",
     type: "website",
   },
   keywords: [

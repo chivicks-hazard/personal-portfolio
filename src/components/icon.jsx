@@ -25,8 +25,13 @@ import {
   SiGithub,
   SiHtml5,
   SiJavascript,
+  SiJupyter,
   SiMysql,
   SiNextdotjs,
+  SiNumpy,
+  SiPandas,
+  SiPostgresql,
+  SiPython,
   SiRedux,
   SiSpring,
   SiSpringboot,
@@ -101,11 +106,23 @@ const Icon = ({ icon }) => {
     case "nodejs":
       return <FaNode />;
 
+    case "python":
+      return <SiPython />;
+
+    case "postgresql":
+      return <SiPostgresql />;
+
     case "expressjs":
       return <SiExpress />;
 
     case "mysql":
       return <SiMysql />;
+
+    case "numpy":
+      return <SiNumpy />;
+
+    case "pandas":
+      return <SiPandas />;
 
     case "git":
       return <SiGit />;
@@ -124,6 +141,9 @@ const Icon = ({ icon }) => {
 
     case "maven":
       return <SiApachemaven />;
+
+    case "jupyter":
+      return <SiJupyter />;
 
     default:
       break;

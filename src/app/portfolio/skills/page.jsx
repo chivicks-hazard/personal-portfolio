@@ -23,14 +23,30 @@ const SkillsPage = () => {
       class: "nodejs",
     },
     {
-      skill: "Java",
-      class: "java",
-    },
-    /* 
-    {
       skill: "ExpressJS",
       class: "expressjs",
     },
+    {
+      skill: "Java",
+      class: "java",
+    },
+    {
+      skill: "PostgreSQL",
+      class: "postgresql",
+    },
+    {
+      skill: "Python",
+      class: "python",
+    },
+    {
+      skill: "Numpy",
+      class: "numpy",
+    },
+    {
+      skill: "Pandas",
+      class: "pandas",
+    },
+    /*
     {
       skill: "Spring + SpringBoot",
       class: ["spring", "springboot"],
@@ -69,6 +85,10 @@ const SkillsPage = () => {
     {
       tool: "Maven",
       class: "maven",
+    },
+    {
+      tool: "Jupyter",
+      class: "jupyter",
     },
   ];
 
