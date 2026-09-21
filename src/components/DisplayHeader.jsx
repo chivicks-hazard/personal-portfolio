@@ -62,7 +62,7 @@ const DisplayHeader = () => {
       </h1>
       <h2 className="text-2xl">
         {/* Tech Extrovert, Enthusiast, and Polymath ||  */}
-        Software Engineer || Front-End Web Developer
+        Software Engineer || Solutions Developer
       </h2>
     </div>
   );
