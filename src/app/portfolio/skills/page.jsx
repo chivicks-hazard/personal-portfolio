@@ -1,5 +1,11 @@
 import Icon from "@/components/icon";
 
+export const metadata = {
+  title: {
+    absolute: "Victor Chigbo | Skills",
+  },
+};
+
 const SkillsPage = () => {
   const skills = [
     { skill: "HTML", class: "html" },
@@ -31,6 +37,10 @@ const SkillsPage = () => {
       class: "java",
     },
     {
+      skill: "Spring + SpringBoot",
+      class: ["spring", "springboot"],
+    },
+    {
       skill: "PostgreSQL",
       class: "postgresql",
     },
@@ -47,10 +57,6 @@ const SkillsPage = () => {
       class: "pandas",
     },
     /*
-    {
-      skill: "Spring + SpringBoot",
-      class: ["spring", "springboot"],
-    },
     {
       skill: "MySQL",
       class: "mysql",
@@ -89,6 +95,10 @@ const SkillsPage = () => {
     {
       tool: "Jupyter",
       class: "jupyter",
+    },
+    {
+      tool: "draw.io",
+      class: "drawio",
     },
   ];
 

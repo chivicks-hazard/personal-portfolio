@@ -33,6 +33,7 @@
   --jupyter: #f37626;
   --numpy: #013243;
   --pandas: #150458;
+  --drawio: #f08705;
 }
 
 @theme inline {
@@ -141,4 +142,7 @@ body {
 }
 .pandas {
   color: var(--pandas);
+}
+.drawio {
+  color: var(--drawio);
 }

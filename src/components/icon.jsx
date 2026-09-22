@@ -19,6 +19,7 @@ import {
   SiChakraui,
   SiChartdotjs,
   SiCss3,
+  SiDiagramsdotnet,
   SiExpress,
   SiFigma,
   SiGit,
@@ -144,6 +145,9 @@ const Icon = ({ icon }) => {
 
     case "jupyter":
       return <SiJupyter />;
+
+    case "drawio":
+      return <SiDiagramsdotnet />;
 
     default:
       break;
