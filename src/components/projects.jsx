@@ -4,6 +4,7 @@ import { motion } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { Fragment } from "react";
 import { FaArrowUpRightFromSquare, FaGithub } from "react-icons/fa6";
 import Icon from "./icon";
 
@@ -12,14 +13,23 @@ const Projects = () => {
 
   const projects = [
     {
-      name: "Flavorfiesta Bites",
+      name: "Playpick Games",
       description:
-        "This was inspired by a restaurant's page with the aim of building a landing page.",
-      stack: ["html", "css", "javascript", "bootstrap"],
-      image: "/images/flavorfiesta.jpg",
+        "Your Ultimate Football Fantasy Playground!\n\nJoin a platform for predictions, competitions, and seamless management--start today!",
+      stack: ["typescript", "react", "nextjs", "tailwindcss"],
+      image: "/images/playpick.png",
       // interval: 5000,
-      link: "https://flavorfiesta.vercel.app/",
-      github: "https://github.com/chivicks-hazard/landing-page",
+      link: "https://playpick.app/",
+      unoptimized: false,
+    },
+    {
+      name: "Paysub",
+      description:
+        "The All-in-One Solution for Streamlining Your Bill Payments!\n\nSimplify Your Bill Payments And Management with Paysub",
+      stack: ["typescript", "react", "nextjs", "tailwindcss"],
+      image: "/images/paysub.png",
+      // interval: 5000,
+      link: "https://www.paysub.co/",
       unoptimized: false,
     },
     {
@@ -34,50 +44,29 @@ const Projects = () => {
       unoptimized: true,
     },
     {
-      name: "Finance Dashboard",
+      name: "Flavorfiesta Bites",
       description:
-        "This was a project I used to increase my skills in TypeScript and get into data visualisation as a frontend developer.",
-      image: "/images/dashboard.png",
+        "This was inspired by a restaurant's page with the aim of building a landing page.",
+      stack: ["html", "css", "javascript", "bootstrap"],
+      image: "/images/flavorfiesta.jpg",
       // interval: 5000,
-      stack: ["react", "tailwindcss", "typescript", "chartjs"],
-      link: "https://my-finance-dashboard.vercel.app/",
-      github: "https://github.com/chivicks-hazard/finance-dashboard",
-      unoptimized: false,
-    },
-    {
-      name: "Twitter Thread Maker",
-      description: "A tool for generating Twitter threads.",
-      image: "/images/twitter-thread-maker.png",
-
-      stack: ["react", "tailwindcss"],
-      link: "https://twitter-thread-maker-omega.vercel.app/",
-      github: "https://github.com/chivicks-hazard/twitter-thread-maker",
-      unoptimized: false,
-    },
-    {
-      name: "VIdeo Streaming Server",
-      description:
-        "This is a project I used to understand streams, and how they work, especially when sending media data across a network through a server. It is built with NodeJS.",
-      image: "/images/video-streamer.png",
-      // interval: 35000,
-      stack: ["nodejs"],
-      github:
-        "https://github.com/chivicks-hazard/nodejs-video-streaming-server",
+      link: "https://flavorfiesta.vercel.app/",
+      github: "https://github.com/chivicks-hazard/landing-page",
       unoptimized: false,
     },
   ];
 
   return (
     <section id="projects">
-      <div className="mt-40 pt-3 max-sm:mx-1">
+      <div className="mt-40 pt-3 max-sm:mx-8">
         <h2 className="text-center mb-5 mt-5 text-3xl text-ghostwhite">
           Projects
         </h2>
 
-        <div className="flex flex-col mt-20 items-center gap-36">
+        <div className="flex flex-col mt-20 items-center gap-20 md:gap-36">
           {projects.map((project, index) => (
             <motion.div
-              className=" border-2 border-ivory rounded md:max-sm:w-full md:w-1/2"
+              className=" border-2 border-ivory rounded md:max-sm:w-full md:w-7/12"
               key={index}
               initial={{ opacity: 0, y: 100 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -96,7 +85,14 @@ const Projects = () => {
                 sizes="100vw"
                 className="border-b border-ivory max-xs:w-fit w-full"
               />
-              <p className="p-2 md:text-xl">{project.description}</p>
+              <p className="p-2 md:text-xl">
+                {project.description.split("\n").map((line, index, arr) => (
+                  <Fragment key={index}>
+                    {line}
+                    {index < arr.length - 1 && <br />}
+                  </Fragment>
+                ))}
+              </p>
               <div className="flex flex-row justify-between items-center p-2 border-t border-ivory">
                 <div className="flex flex-row items-center gap-2">
                   {project.stack.map((stack, index) => (
@@ -118,13 +114,15 @@ const Projects = () => {
                       <FaArrowUpRightFromSquare />
                     </a>
                   )}
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    className="text-md md:text-2xl text-ivory border rounded border-ivory p-1"
-                  >
-                    <FaGithub />
-                  </a>
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      className="text-md md:text-2xl text-ivory border rounded border-ivory p-1"
+                    >
+                      <FaGithub />
+                    </a>
+                  )}
                 </div>
               </div>
             </motion.div>

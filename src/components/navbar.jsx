@@ -6,7 +6,6 @@ import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { FaCode, FaUser } from "react-icons/fa6";
 import { IoHome } from "react-icons/io5";
-import { MdPeopleAlt } from "react-icons/md";
 
 const Navbar = () => {
   const router = useRouter();
@@ -103,14 +102,7 @@ const Navbar = () => {
               <IoHome className="text-white" />
               <span>Home</span>
             </Link>
-            {/* <Link
-              onClick={() => setIsOpen(false)}
-              href="/about"
-              className="md:hover:scale-150 ease-in duration-500 inline-flex flex-row items-start gap-1"
-            >
-              <FaUser className="text-white" />
-              <span>About</span>
-            </Link> */}
+
             <Link
               onClick={() => setIsOpen(false)}
               href="/portfolio"
@@ -121,12 +113,20 @@ const Navbar = () => {
             </Link>
             <Link
               onClick={() => setIsOpen(false)}
+              href="/about"
+              className="md:hover:scale-150 ease-in duration-500 inline-flex flex-row items-start gap-1"
+            >
+              <FaUser className="text-white" />
+              <span>About</span>
+            </Link>
+            {/* <Link
+              onClick={() => setIsOpen(false)}
               href="/communities"
               className="md:hover:scale-150 ease-in duration-500 inline-flex flex-row items-start gap-1"
             >
               <MdPeopleAlt className="text-white" />
               <span>Communities</span>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

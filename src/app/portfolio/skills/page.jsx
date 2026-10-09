@@ -1,5 +1,11 @@
 import Icon from "@/components/icon";
 
+export const metadata = {
+  title: {
+    absolute: "Victor Chigbo | Skills",
+  },
+};
+
 const SkillsPage = () => {
   const skills = [
     { skill: "HTML", class: "html" },
@@ -9,7 +15,7 @@ const SkillsPage = () => {
     { skill: "Tailwind CSS", class: "tailwindcss" },
     { skill: "React", class: "react" },
     { skill: "TypeScript", class: "typescript" },
-    // { skill: "Chart JS", class: "chartjs" },
+    { skill: "Chart JS", class: "chartjs" },
     {
       skill: "Chakra UI",
       class: "charka-ui",
@@ -31,6 +37,10 @@ const SkillsPage = () => {
       class: "java",
     },
     {
+      skill: "Spring + SpringBoot",
+      class: ["spring", "springboot"],
+    },
+    {
       skill: "PostgreSQL",
       class: "postgresql",
     },
@@ -47,10 +57,6 @@ const SkillsPage = () => {
       class: "pandas",
     },
     /*
-    {
-      skill: "Spring + SpringBoot",
-      class: ["spring", "springboot"],
-    },
     {
       skill: "MySQL",
       class: "mysql",
@@ -90,13 +96,17 @@ const SkillsPage = () => {
       tool: "Jupyter",
       class: "jupyter",
     },
+    {
+      tool: "draw.io",
+      class: "drawio",
+    },
   ];
 
   return (
     <main id="skillset">
       <div className="mt-32">
         <div className="mt-5 pt-3 max-sm:mx-3">
-          <h1 className="text-4xl md:text-6xl text-center mb-10 text-aliceblue">
+          <h1 className="text-5xl md:text-6xl text-center mb-10 text-aliceblue">
             Skills
           </h1>
           <p className="text-xl md:text-2xl text-center">
@@ -105,15 +115,15 @@ const SkillsPage = () => {
             non-technical. */}
           </p>
           <section id="languages" className="mt-20">
-            <h2 className="text-4xl text-center text-aliceblue">
+            <h2 className="text-3xl text-center text-aliceblue">
               Languages, Libraries, And Frameworks
             </h2>
-            <div className="language mt-8 grid grid-cols-3 gap-2 md:mx-40">
+            <div className="language mt-8 grid grid-cols-2 md:grid-cols-3 gap-2 mx-5 md:mx-40">
               {skills.map((skill, index) => {
                 return (
                   <div
                     key={index}
-                    className={`border-2 rounded py-3 px-3 row-span-1 col-span-1 flex flex-col items-center justify-center md:px-1`}
+                    className={`border-2 border-ivory rounded py-3 px-3 row-span-1 col-span-1 flex flex-col items-center justify-center md:px-1`}
                   >
                     {Array.isArray(skill.class) ? (
                       <span
@@ -141,13 +151,13 @@ const SkillsPage = () => {
 
           {/* Tools */}
           <section id="tools">
-            <h2 className="text-4xl text-center text-aliceblue mt-20">Tools</h2>
-            <div className="language mt-8 grid grid-cols-3 gap-2 md:mx-40">
+            <h2 className="text-3xl text-center text-aliceblue mt-20">Tools</h2>
+            <div className="language mt-8 grid grid-cols-2 md:grid-cols-3 gap-2 mx-5 md:mx-40">
               {tools.map((tool, index) => {
                 return (
                   <div
                     key={index}
-                    className={`border-2 rounded py-3 px-3 row-span-1 col-span-1 flex flex-col items-center justify-center md:px-1`}
+                    className={`border-2 border-ivory rounded py-3 px-3 row-span-1 col-span-1 flex flex-col items-center justify-center md:px-1`}
                   >
                     {Array.isArray(tool.class) ? (
                       <span

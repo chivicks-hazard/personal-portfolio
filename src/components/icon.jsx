@@ -13,16 +13,29 @@ import {
   FaRegEnvelope,
   FaXTwitter,
 } from "react-icons/fa6";
+import { IoAnalytics } from "react-icons/io5";
+import {
+  LuChartNoAxesCombined,
+  LuLayers3,
+  LuMonitor,
+  LuServer,
+  LuServerCog,
+  LuSparkles,
+  LuWalletCards,
+} from "react-icons/lu";
+import { MdDashboard } from "react-icons/md";
 import { RiTailwindCssFill } from "react-icons/ri";
 import {
   SiApachemaven,
   SiChakraui,
   SiChartdotjs,
   SiCss3,
+  SiDiagramsdotnet,
   SiExpress,
   SiFigma,
   SiGit,
   SiGithub,
+  SiGooglegemini,
   SiHtml5,
   SiJavascript,
   SiJupyter,
@@ -40,6 +53,7 @@ import {
 
 const Icon = ({ icon }) => {
   switch (icon) {
+    // languages, libraries, and frameworks
     case "html":
       return <SiHtml5 />;
 
@@ -124,6 +138,7 @@ const Icon = ({ icon }) => {
     case "pandas":
       return <SiPandas />;
 
+    // tools
     case "git":
       return <SiGit />;
 
@@ -144,6 +159,40 @@ const Icon = ({ icon }) => {
 
     case "jupyter":
       return <SiJupyter />;
+
+    case "drawio":
+      return <SiDiagramsdotnet />;
+
+    // domains
+    case "frontend":
+      return <LuMonitor />;
+
+    case "server":
+      return <LuServer />;
+
+    case "servercog":
+      return <LuServerCog />;
+
+    case "fullstack":
+      return <LuLayers3 />;
+
+    case "data":
+      return <LuChartNoAxesCombined />;
+
+    case "analytics":
+      return <IoAnalytics />;
+
+    case "dashboard":
+      return <MdDashboard />;
+
+    case "wallet":
+      return <LuWalletCards />;
+
+    case "ai":
+      return <LuSparkles />;
+
+    case "gemini":
+      return <SiGooglegemini />;
 
     default:
       break;

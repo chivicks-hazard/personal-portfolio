@@ -1,0 +1,177 @@
+"use client";
+
+import { motion } from "motion/react";
+import Image from "next/image";
+import { Fragment } from "react";
+import { FaArrowUpRightFromSquare, FaGithub } from "react-icons/fa6";
+import Icon from "./icon";
+
+const ProjectSection = () => {
+  const projects = [
+    {
+      name: "Playpick Games",
+      description: `
+        Your Ultimate Football Fantasy Playground!
+
+        Join a platform for predictions, competitions, and seamless management--start today!`,
+      stack: ["typescript", "react", "nextjs", "tailwindcss"],
+      image: "/images/playpick.png",
+      // interval: 5000,
+      link: "https://playpick.app/",
+      unoptimized: false,
+    },
+    {
+      name: "Paysub",
+      description: `
+          The All-in-One Solution for Streamlining Your Bill Payments!
+
+          Simplify Your Bill Payments And Management with Paysub
+        `,
+      stack: ["typescript", "react", "nextjs", "tailwindcss"],
+      image: "/images/paysub.png",
+      // interval: 5000,
+      link: "https://www.paysub.co/",
+      unoptimized: false,
+    },
+    {
+      name: "ATM CLI Simulation",
+      description:
+        "This is a project to simulate the experience of using an ATM machine via the console.",
+      image: "/images/atm-cli.gif",
+      // interval: 35000,
+      stack: ["java"],
+      github: "https://github.com/chivicks-hazard/java-atm-cli",
+      unoptimized: true,
+    },
+    {
+      name: "Opay Clone",
+      description:
+        "This is a project used to exercise my skills in React and Tailwind CSS",
+      image: "/images/my-opay-clone.gif",
+      // interval: 35000,
+      stack: ["react", "tailwindcss"],
+      link: "https://my-opay-clone.vercel.app/",
+      github: "https://github.com/chivicks-hazard/opay-clone",
+      unoptimized: true,
+    },
+    {
+      name: "Flavorfiesta Bites",
+      description:
+        "This was inspired by a restaurant's page with the aim of building a landing page.",
+      stack: ["html", "css", "javascript", "bootstrap"],
+      image: "/images/flavorfiesta.jpg",
+      // interval: 5000,
+      link: "https://flavorfiesta.vercel.app/",
+      github: "https://github.com/chivicks-hazard/landing-page",
+      unoptimized: false,
+    },
+    {
+      name: "Finance Dashboard",
+      description:
+        "This was a project I used to increase my skills in TypeScript and get into data visualisation as a frontend developer.",
+      image: "/images/dashboard.png",
+      // interval: 5000,
+      stack: ["react", "tailwindcss", "typescript", "chartjs"],
+      link: "https://my-finance-dashboard.vercel.app/",
+      github: "https://github.com/chivicks-hazard/finance-dashboard",
+      unoptimized: false,
+    },
+    {
+      name: "Twitter Thread Maker",
+      description: "A tool for generating Twitter threads.",
+      image: "/images/twitter-thread-maker.png",
+
+      stack: ["react", "tailwindcss"],
+      link: "https://twitter-thread-maker-omega.vercel.app/",
+      github: "https://github.com/chivicks-hazard/twitter-thread-maker",
+      unoptimized: false,
+    },
+    {
+      name: "CLI Converter App",
+      description: "This is an app I was able to build with Java",
+      image: "/images/cli-converter.gif",
+      // interval: 35000,
+      stack: ["java"],
+      github: "https://github.com/chivicks-hazard/java-unit-converter",
+      unoptimized: true,
+    },
+    {
+      name: "VIdeo Streaming Server",
+      description:
+        "This is a project I used to understand streams, and how they work, especially when sending media data across a network through a server. It is built with NodeJS.",
+      image: "/images/video-streamer.png",
+      // interval: 35000,
+      stack: ["nodejs"],
+      github:
+        "https://github.com/chivicks-hazard/nodejs-video-streaming-server",
+      unoptimized: false,
+    },
+  ];
+
+  return (
+    <div className="flex flex-col mt-20 items-center gap-20 md:gap-36 mx-5">
+      {projects.map((project, index) => (
+        <motion.div
+          className=" border-2 border-ivory rounded md:max-sm:w-full md:w-7/12"
+          key={index}
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+        >
+          <h3 className="text-lg text-ivory border-b-2 border-ivory p-2">
+            {project.name}
+          </h3>
+          <Image
+            src={project.image}
+            alt={project.name}
+            unoptimized={project.unoptimized}
+            width={0}
+            height={0}
+            sizes="100vw"
+            className="border-b-2 border-ivory max-xs:w-fit w-full"
+          />
+          <p className="p-2 md:text-xl text-ghostwhite">
+            {project.description.split("\n").map((line, index, arr) => (
+              <Fragment key={index}>
+                {line}
+                {index < arr.length - 1 && <br />}
+              </Fragment>
+            ))}
+          </p>
+          <div className="flex flex-row justify-between items-center p-2 border-t-2 border-ivory">
+            <div className="flex flex-row items-center gap-2">
+              {project.stack.map((stack, index) => (
+                <span key={index} className={`text-2xl md:text-5xl ${stack}`}>
+                  <Icon icon={stack} />
+                </span>
+              ))}
+            </div>
+            <div className="flex flex-row items-center gap-3">
+              {project.link && (
+                <a
+                  href={project.link}
+                  target="_blank"
+                  className="text-md md:text-2xl text-ivory border rounded border-ivory p-1"
+                >
+                  <FaArrowUpRightFromSquare />
+                </a>
+              )}
+              {project.github && (
+                <a
+                  href={project.github}
+                  target="_blank"
+                  className="text-md md:text-2xl text-ivory border rounded border-ivory p-1"
+                >
+                  <FaGithub />
+                </a>
+              )}
+            </div>
+          </div>
+        </motion.div>
+      ))}
+    </div>
+  );
+};
+
+export default ProjectSection;

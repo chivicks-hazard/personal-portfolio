@@ -44,13 +44,11 @@ const HomePage = () => {
               <DisplayHeader />
               <div>
                 <p className="text-xl md:text-2xl mt-10">
-                  I am a software engineer and frontend developer who
-                  specializes in building responsive, user-intuitive and
-                  accessible web applications. From time to time, I also try to
-                  extend my knowledge and skills in the field of software
-                  engineering. Currently, I'm focused on building my skills in
-                  system design, problem-solving, analytical thinking, DSA,
-                  testing, documentation and agile practices.
+                  I am a software engineer who loves to build solutions. From
+                  web apps to analytics dashboards, strong enterprise systems,
+                  internal tools for management and designing software systems.
+                  I make problems easier to solve in big enterprises and
+                  large-scale systems.
                 </p>
                 <div className="flex flex-row justify-start text-xl md:text-3xl gap-3 mt-4">
                   <span className="text-aliceblue">Connect with me:</span>
