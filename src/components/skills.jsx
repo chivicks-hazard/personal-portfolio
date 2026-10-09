@@ -6,34 +6,43 @@ import Icon from "./icon";
 
 const Skills = () => {
   const skills = [
-    { skill: "HTML", class: "html" },
-    { skill: "CSS", class: "css" },
     { skill: "JavaScript", class: "javascript" },
-    { skill: "Bootstrap", class: "bootstrap" },
-    { skill: "Tailwind CSS", class: "tailwindcss" },
     { skill: "React", class: "react" },
+    { skill: "Tailwind CSS", class: "tailwindcss" },
     { skill: "TypeScript", class: "typescript" },
     // { skill: "Chart JS", class: "chartjs" },
     {
       skill: "NextJS",
       class: "nextjs",
     },
+    {
+      skill: "NodeJS",
+      class: "nodejs",
+    },
+    {
+      skill: "ExpressJS",
+      class: "expressjs",
+    },
+    {
+      skill: "Java",
+      class: "java",
+    },
   ];
 
   const router = useRouter();
 
   return (
-    <section id="skillset">
-      <div className="mt-5 pt-3 max-sm:mx-3">
+    <section id="skills">
+      <div className="mt-20 pt-3 max-sm:mx-8">
         <h2 className="text-center mb-5 mt-5 text-3xl text-ghostwhite">
           Skills
         </h2>
-        <div className="language mt-1 grid grid-cols-3 gap-2 md:mx-40">
+        <div className="language mt-1 grid grid-cols-2 lg:grid-cols-3 gap-2 md:mx-40">
           {skills.map((skill, index) => {
             return (
               <div
                 key={index}
-                className={`border-2 rounded py-3 px-3 row-span-1 col-span-1 flex flex-col items-center justify-center md:px-1`}
+                className={`border-2 border-ivory rounded py-3 px-3 row-span-1 col-span-1 flex flex-col items-center justify-center md:px-1`}
               >
                 <span className={`mt-3 text-5xl md:text-9xl ${skill.class}`}>
                   <Icon icon={`${skill.class}`} />

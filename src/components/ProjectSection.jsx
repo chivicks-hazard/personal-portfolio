@@ -109,17 +109,17 @@ const ProjectSection = () => {
   ];
 
   return (
-    <div className="flex flex-col mt-20 items-center gap-36">
+    <div className="flex flex-col mt-20 items-center gap-20 md:gap-36 mx-5">
       {projects.map((project, index) => (
         <motion.div
-          className=" border-2 border-ivory rounded md:max-sm:w-full md:w-1/2"
+          className=" border-2 border-ivory rounded md:max-sm:w-full md:w-7/12"
           key={index}
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <h3 className="text-lg text-ivory border-b border-ivory p-2">
+          <h3 className="text-lg text-ivory border-b-2 border-ivory p-2">
             {project.name}
           </h3>
           <Image
@@ -129,9 +129,9 @@ const ProjectSection = () => {
             width={0}
             height={0}
             sizes="100vw"
-            className="border-b border-ivory max-xs:w-fit w-full"
+            className="border-b-2 border-ivory max-xs:w-fit w-full"
           />
-          <p className="p-2 md:text-xl">
+          <p className="p-2 md:text-xl text-ghostwhite">
             {project.description.split("\n").map((line, index, arr) => (
               <Fragment key={index}>
                 {line}
@@ -139,7 +139,7 @@ const ProjectSection = () => {
               </Fragment>
             ))}
           </p>
-          <div className="flex flex-row justify-between items-center p-2 border-t border-ivory">
+          <div className="flex flex-row justify-between items-center p-2 border-t-2 border-ivory">
             <div className="flex flex-row items-center gap-2">
               {project.stack.map((stack, index) => (
                 <span key={index} className={`text-2xl md:text-5xl ${stack}`}>

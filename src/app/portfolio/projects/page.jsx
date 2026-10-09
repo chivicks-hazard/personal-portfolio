@@ -10,7 +10,7 @@ const ProjectsPage = () => {
   return (
     <main id="skillset">
       <div className="mt-32">
-        <div className="mt-5 pt-3 max-sm:mx-3">
+        <div className="mt-5 pt-3 max-sm:mx-5">
           <h1 className="text-4xl md:text-5xl text-center mb-10 text-aliceblue">
             Projects
           </h1>
