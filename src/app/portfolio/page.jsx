@@ -1,3 +1,4 @@
+import Expertise from "@/components/expertise";
 import Projects from "../../components/projects";
 import Skills from "../../components/skills";
 
@@ -9,14 +10,12 @@ const PortfolioPage = () => {
           <h1 className="text-4xl md:text-5xl text-center mb-10 text-aliceblue">
             My Portfolio
           </h1>
-          <p className="text-xl md:text-2xl text-center">
-            This is a collection of my skill set, ranging from technical to
-            non-technical.
-            <br />
-            This page also contains some of the projects I have worked on so
-            far.
+          <p className="text-xl md:text-2xl text-center mx-5 md:mx-40 md:w-3/4">
+            This is a collection of my expertise as a software engineer, my
+            skills, and the projects I have worked on so far.
           </p>
 
+          <Expertise />
           <Skills />
           <Projects />
         </div>

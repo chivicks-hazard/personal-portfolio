@@ -1,10 +1,10 @@
 "use client";
 
-import { Fragment } from "react";
 import { motion } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { Fragment } from "react";
 import { FaArrowUpRightFromSquare, FaGithub } from "react-icons/fa6";
 import Icon from "./icon";
 
@@ -58,15 +58,15 @@ const Projects = () => {
 
   return (
     <section id="projects">
-      <div className="mt-40 pt-3 max-sm:mx-1">
+      <div className="mt-40 pt-3 max-sm:mx-8">
         <h2 className="text-center mb-5 mt-5 text-3xl text-ghostwhite">
           Projects
         </h2>
 
-        <div className="flex flex-col mt-20 items-center gap-36">
+        <div className="flex flex-col mt-20 items-center gap-20 md:gap-36">
           {projects.map((project, index) => (
             <motion.div
-              className=" border-2 border-ivory rounded md:max-sm:w-full md:w-1/2"
+              className=" border-2 border-ivory rounded md:max-sm:w-full md:w-7/12"
               key={index}
               initial={{ opacity: 0, y: 100 }}
               whileInView={{ opacity: 1, y: 0 }}

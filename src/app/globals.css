@@ -34,6 +34,7 @@
   --numpy: #013243;
   --pandas: #150458;
   --drawio: #f08705;
+  --gemini: #4285f4;
 }
 
 @theme inline {
@@ -101,7 +102,8 @@ body {
 .expressjs {
   color: var(--expressjs);
 }
-.spring {
+.spring,
+.springboot {
   color: var(--spring);
 }
 .mysql {
@@ -145,4 +147,7 @@ body {
 }
 .drawio {
   color: var(--drawio);
+}
+.gemini {
+  color: var(--gemini);
 }
